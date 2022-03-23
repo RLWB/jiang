@@ -1,0 +1,356 @@
+.page {
+  position: relative;
+  width: 1750px;
+  height: 936px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .main1 {
+    z-index: 3;
+    height: 936px;
+    overflow: hidden;
+    background: url(./img/SketchPng40a2524ff8bdcf562ef5ecc9972c5797c15a84a93612af2f83b2f9855287817f.png)
+      100% no-repeat;
+    width: 1750px;
+    position: relative;
+    .bd1 {
+      z-index: 5;
+      position: relative;
+      width: 1750px;
+      height: 936px;
+      overflow: hidden;
+      background: url(./img/SketchPngf5f5b215b91710966081ef2437e25d6670a5033d2b6a6bf4e6bc615fd981c77c.png)
+        100% no-repeat;
+      .group1 {
+        z-index: 7;
+        position: absolute;
+        left: 599px;
+        top: 137px;
+        width: 552px;
+        height: 664px;
+        border: 1px solid rgba(242, 242, 242, 0.72);
+        box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+        overflow: hidden;
+        background: url(./img/SketchPngeab75330effce0307b10307b35c3fe5bd50724a296dc3df489f55b584574353f.png) -15px -13px
+          no-repeat;
+        .word1 {
+          z-index: 9;
+          position: absolute;
+          left: 221px;
+          top: 23px;
+          width: 110px;
+          height: 35px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 24px;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 24px;
+          text-align: right;
+        }
+        .icon1 {
+          z-index: 70;
+          position: absolute;
+          left: 494px;
+          top: 27px;
+          width: 26px;
+          height: 26px;
+        }
+        .section1 {
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          top: 78px;
+          width: 548px;
+          height: 2px;
+          background: url(./img/SketchPng055f240760819a2f67a360edb5ce30e3980f90fe86d96b4662f538d284ed2201.png)
+            100% no-repeat;
+        }
+        .section2 {
+          z-index: 23;
+          height: 56px;
+          border: 1px solid rgba(0, 182, 156, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 10px;
+          width: 400px;
+          position: absolute;
+          left: 76px;
+          top: 120px;
+          .box1 {
+            width: 237px;
+            height: 32px;
+            .icon2 {
+              width: 28px;
+              height: 28px;
+              margin-top: 2px;
+            }
+            .block1 {
+              width: 1px;
+              height: 29px;
+              background: url(./img/SketchPng659fc0bd76b81987b1b33b6a6240841c3d7ed4cd0f360302bad7561927ecdaf3.png) -1px -1px
+                no-repeat;
+              margin: 2px 0 0 14px;
+            }
+            .txt1 {
+              width: 191px;
+              height: 32px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 16px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 24px;
+              text-align: left;
+              margin-left: 3px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section3 {
+          z-index: 53;
+          height: 56px;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 400px;
+          position: absolute;
+          left: 76px;
+          top: 196px;
+          padding: 6px 0 0 10px;
+          .wrap1 {
+            width: 383px;
+            height: 43px;
+            .label1 {
+              width: 28px;
+              height: 28px;
+              margin-top: 7px;
+            }
+            .txt2 {
+              width: 191px;
+              height: 32px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 16px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 24px;
+              text-align: left;
+              margin-top: 5px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .block2 {
+              z-index: 56;
+              height: 43px;
+              background-color: rgba(114, 166, 159, 1);
+              width: 120px;
+              position: relative;
+              .main2 {
+                z-index: 59;
+                height: 43px;
+                background-color: rgba(0, 182, 156, 1);
+                width: 120px;
+                position: static;
+                left: 949px;
+                top: 340px;
+                padding: 14px 0 0 12px;
+                .word2 {
+                  width: 95px;
+                  height: 14px;
+                  display: block;
+                  overflow-wrap: break-word;
+                  color: rgba(255, 255, 255, 1);
+                  font-size: 14px;
+                  font-family: SourceHanSansCN-Regular;
+                  white-space: nowrap;
+                  line-height: 14px;
+                  text-align: right;
+                }
+              }
+              .word3 {
+                z-index: 57;
+                position: absolute;
+                left: 7px;
+                top: 14px;
+                width: 107px;
+                height: 14px;
+                display: block;
+                overflow-wrap: break-word;
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-family: SourceHanSansCN-Regular;
+                white-space: nowrap;
+                line-height: 14px;
+                text-align: right;
+              }
+            }
+          }
+        }
+        .section4 {
+          z-index: 33;
+          height: 56px;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 10px;
+          width: 400px;
+          position: absolute;
+          left: 76px;
+          top: 272px;
+          .bd2 {
+            width: 373px;
+            height: 32px;
+            .icon3 {
+              width: 28px;
+              height: 28px;
+              margin-top: 2px;
+            }
+            .info1 {
+              width: 324px;
+              height: 32px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 16px;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 24px;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section5 {
+          z-index: 43;
+          height: 56px;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 10px;
+          width: 400px;
+          position: absolute;
+          left: 76px;
+          top: 348px;
+          .mod1 {
+            width: 373px;
+            height: 32px;
+            .label2 {
+              width: 28px;
+              height: 28px;
+              margin-top: 2px;
+            }
+            .word4 {
+              width: 324px;
+              height: 32px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 16px;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 24px;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section6 {
+          z-index: 13;
+          height: 50px;
+          background-color: rgba(6, 122, 105, 1);
+          width: 400px;
+          position: absolute;
+          left: 76px;
+          top: 501px;
+          .mod2 {
+            z-index: 16;
+            height: 50px;
+            background-color: rgba(0, 182, 156, 1);
+            width: 400px;
+            position: static;
+            left: 675px;
+            top: 638px;
+            .word5 {
+              width: 194px;
+              height: 18px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 18px;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 18px;
+              text-align: right;
+            }
+          }
+          .info2 {
+            z-index: 14;
+            position: absolute;
+            left: 111px;
+            top: 16px;
+            width: 177px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 18px;
+            text-align: right;
+          }
+        }
+        .word6 {
+          z-index: 19;
+          position: absolute;
+          left: 165px;
+          top: 591px;
+          width: 110px;
+          height: 35px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 19px;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 35px;
+          text-align: right;
+        }
+        .section7 {
+          z-index: 21;
+          position: absolute;
+          left: 276px;
+          top: 593px;
+          width: 1px;
+          height: 32px;
+          background: url(./img/SketchPng2c029c99e55a37a1b6681df5ad7db90ac659b81080fdf6c2bea281a516a4e479.png)
+            0px 0px no-repeat;
+        }
+        .word7 {
+          z-index: 20;
+          position: absolute;
+          left: 276px;
+          top: 591px;
+          width: 110px;
+          height: 35px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 19px;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 35px;
+          text-align: right;
+        }
+      }
+    }
+    .pic1 {
+      z-index: 4;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1750px;
+      height: 936px;
+    }
+  }
+}

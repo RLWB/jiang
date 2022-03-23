@@ -1,0 +1,402 @@
+.page {
+  position: relative;
+  width: 46.667rem;
+  height: 24.96rem;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .main1 {
+    z-index: 3;
+    height: 24.96rem;
+    overflow: hidden;
+    background: url(./img/SketchPng40a2524ff8bdcf562ef5ecc9972c5797c15a84a93612af2f83b2f9855287817f.png)
+      100% no-repeat;
+    width: 46.667rem;
+    position: relative;
+    .bd1 {
+      z-index: 5;
+      position: relative;
+      width: 46.667rem;
+      height: 24.96rem;
+      overflow: hidden;
+      background: url(./img/SketchPngf5f5b215b91710966081ef2437e25d6670a5033d2b6a6bf4e6bc615fd981c77c.png)
+        100% no-repeat;
+      .bd2 {
+        z-index: 7;
+        position: absolute;
+        left: 15.974rem;
+        top: 2.667rem;
+        width: 14.72rem;
+        height: 20.507rem;
+        border: 1px solid rgba(242, 242, 242, 0.72);
+        box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+        overflow: hidden;
+        background: url(./img/SketchPngf258007083b3a5c71c381cac32bb61a802795bf4040bb6444ef65b8ecc44078d.png) -0.4rem -0.347rem
+          no-repeat;
+        background-size: 15.467rem 21.254rem;
+        .word1 {
+          z-index: 9;
+          position: absolute;
+          left: 5.894rem;
+          top: 0.614rem;
+          width: 2.934rem;
+          height: 0.934rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.64rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.64rem;
+          text-align: right;
+        }
+        .icon1 {
+          z-index: 80;
+          position: absolute;
+          left: 13.174rem;
+          top: 0.72rem;
+          width: 0.694rem;
+          height: 0.694rem;
+        }
+        .box1 {
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          top: 2.08rem;
+          width: 14.614rem;
+          height: 0.054rem;
+          background: url(./img/SketchPng055f240760819a2f67a360edb5ce30e3980f90fe86d96b4662f538d284ed2201.png)
+            100% no-repeat;
+        }
+        .box2 {
+          z-index: 26;
+          height: 1.494rem;
+          border: 1px solid rgba(0, 182, 156, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 3.2rem;
+          padding: 0.32rem 0 0 0.24rem;
+          .outer1 {
+            width: 6.374rem;
+            height: 0.88rem;
+            .label1 {
+              width: 0.747rem;
+              height: 0.747rem;
+            }
+            .layer1 {
+              width: 0.027rem;
+              height: 0.774rem;
+              background: url(./img/SketchPng659fc0bd76b81987b1b33b6a6240841c3d7ed4cd0f360302bad7561927ecdaf3.png) -0.027rem -0.027rem
+                no-repeat;
+              background-size: 0.08rem 0.827rem;
+              margin-left: 0.4rem;
+            }
+            .txt1 {
+              width: 5.094rem;
+              height: 0.854rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.426rem;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 0.64rem;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin: 0.027rem 0 0 0.107rem;
+            }
+          }
+        }
+        .box3 {
+          z-index: 36;
+          height: 1.494rem;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 5.227rem;
+          padding: 0.32rem 0 0 0.24rem;
+          .group1 {
+            width: 10rem;
+            height: 0.854rem;
+            .icon2 {
+              width: 0.747rem;
+              height: 0.747rem;
+            }
+            .info1 {
+              width: 8.64rem;
+              height: 0.854rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.426rem;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 0.64rem;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .box4 {
+          z-index: 59;
+          height: 1.494rem;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 7.254rem;
+          padding: 0.16rem 0 0 0.24rem;
+          .outer2 {
+            width: 10.24rem;
+            height: 1.147rem;
+            .label2 {
+              width: 0.747rem;
+              height: 0.747rem;
+              margin-top: 0.187rem;
+            }
+            .word2 {
+              width: 5.094rem;
+              height: 0.854rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.426rem;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 0.64rem;
+              text-align: left;
+              margin-top: 0.134rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .mod1 {
+              z-index: 62;
+              height: 1.147rem;
+              background-color: rgba(114, 166, 159, 1);
+              width: 3.2rem;
+              position: relative;
+              .box5 {
+                z-index: 65;
+                height: 1.147rem;
+                background-color: rgba(0, 182, 156, 1);
+                width: 3.2rem;
+                position: static;
+                left: 25.307rem;
+                top: 10.107rem;
+                padding: 0.374rem 0 0 0.32rem;
+                .info2 {
+                  width: 2.534rem;
+                  height: 0.374rem;
+                  display: block;
+                  overflow-wrap: break-word;
+                  color: rgba(255, 255, 255, 1);
+                  font-size: 0.373rem;
+                  font-family: SourceHanSansCN-Regular;
+                  white-space: nowrap;
+                  line-height: 0.374rem;
+                  text-align: right;
+                }
+              }
+              .txt2 {
+                z-index: 63;
+                position: absolute;
+                left: 0.187rem;
+                top: 0.374rem;
+                width: 2.854rem;
+                height: 0.374rem;
+                display: block;
+                overflow-wrap: break-word;
+                color: rgba(255, 255, 255, 1);
+                font-size: 0.373rem;
+                font-family: SourceHanSansCN-Regular;
+                white-space: nowrap;
+                line-height: 0.374rem;
+                text-align: right;
+              }
+            }
+          }
+        }
+        .box6 {
+          z-index: 46;
+          height: 1.494rem;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 0.24rem;
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 9.28rem;
+          .outer3 {
+            width: 9.974rem;
+            height: 0.854rem;
+            .icon3 {
+              width: 0.747rem;
+              height: 0.747rem;
+              margin-top: 0.054rem;
+            }
+            .word3 {
+              width: 8.64rem;
+              height: 0.854rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.426rem;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 0.64rem;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .box7 {
+          z-index: 20;
+          height: 1.334rem;
+          background-color: rgba(7, 79, 123, 1);
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 13.147rem;
+          .mod2 {
+            z-index: 23;
+            height: 1.334rem;
+            background-color: rgba(0, 113, 182, 1);
+            padding-left: 3.014rem;
+            width: 10.667rem;
+            position: static;
+            left: 18rem;
+            top: 15.814rem;
+            .txt3 {
+              width: 4.614rem;
+              height: 0.48rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.48rem;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 0.48rem;
+              text-align: right;
+            }
+          }
+          .info3 {
+            z-index: 21;
+            position: absolute;
+            left: 3.067rem;
+            top: 0.427rem;
+            width: 4.534rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            text-align: right;
+          }
+        }
+        .box8 {
+          z-index: 13;
+          height: 1.334rem;
+          background-color: rgba(6, 122, 105, 1);
+          width: 10.667rem;
+          position: absolute;
+          left: 2.027rem;
+          top: 15.014rem;
+          .main2 {
+            z-index: 16;
+            height: 1.334rem;
+            background-color: rgba(0, 182, 156, 1);
+            width: 10.667rem;
+            position: static;
+            left: 18rem;
+            top: 17.68rem;
+            .info4 {
+              width: 5.174rem;
+              height: 0.48rem;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.48rem;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 0.48rem;
+              text-align: right;
+            }
+          }
+          .txt4 {
+            z-index: 14;
+            position: absolute;
+            left: 2.96rem;
+            top: 0.427rem;
+            width: 4.72rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            text-align: right;
+          }
+        }
+        .box9 {
+          z-index: 78;
+          height: 0.374rem;
+          border: 1px solid rgba(199, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 0.374rem;
+          position: absolute;
+          left: 3.974rem;
+          top: 18.8rem;
+          .wrap1 {
+            width: 0.214rem;
+            height: 0.214rem;
+            background-color: rgba(0, 182, 156, 1);
+          }
+        }
+        .box10 {
+          position: absolute;
+          left: 4.64rem;
+          top: 18.587rem;
+          width: 6.08rem;
+          height: 0.854rem;
+          overflow-wrap: break-word;
+          text-align: left;
+          font-size: 0;
+          .word4 {
+            font-size: 0.373rem;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 0.64rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .info5 {
+            font-size: 0.373rem;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 182, 156, 1);
+            line-height: 0.64rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .img1 {
+      z-index: 4;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 46.667rem;
+      height: 24.96rem;
+    }
+  }
+}

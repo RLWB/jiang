@@ -1,0 +1,171 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 53.49vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .mod1 {
+    z-index: 3;
+    height: 53.49vw;
+    overflow: hidden;
+    background: url(./img/SketchPng40a2524ff8bdcf562ef5ecc9972c5797c15a84a93612af2f83b2f9855287817f.png)
+      100% no-repeat;
+    width: 100vw;
+    position: relative;
+    .layer1 {
+      z-index: 5;
+      position: relative;
+      width: 100vw;
+      height: 53.49vw;
+      overflow: hidden;
+      background: url(./img/SketchPngf5f5b215b91710966081ef2437e25d6670a5033d2b6a6bf4e6bc615fd981c77c.png)
+        100% no-repeat;
+      .bd1 {
+        z-index: 7;
+        position: absolute;
+        left: 34.23vw;
+        top: 10.06vw;
+        width: 31.55vw;
+        height: 31.66vw;
+        border: 1px solid rgba(242, 242, 242, 0.72);
+        box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+        overflow: hidden;
+        background: url(./img/SketchPng819d85bee13f372cc66291fb6e5b009b8de3c9753e853b8e6e78ac0c9f054d80.png) -0.86vw -0.75vw
+          no-repeat;
+        background-size: 33.14vw 33.25vw;
+        .pic1 {
+          z-index: 21;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 4.52vw;
+          height: 4.52vw;
+        }
+        .info1 {
+          z-index: 12;
+          position: absolute;
+          left: 12.63vw;
+          top: 1.32vw;
+          width: 6.29vw;
+          height: 2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+        .icon1 {
+          z-index: 18;
+          position: absolute;
+          left: 28.23vw;
+          top: 1.55vw;
+          width: 1.49vw;
+          height: 1.49vw;
+        }
+        .section1 {
+          z-index: 14;
+          height: 1.26vw;
+          background: url(./img/SketchPng6a97a4f8bdf5b5ab462ac8fee4df9e4ec9d33bbd401480a2d446b20af0073421.png)
+            0vw 0vw no-repeat;
+          background-size: 5.94vw 1.25vw;
+          padding-left: 0.69vw;
+          width: 5.95vw;
+          position: absolute;
+          left: 2.46vw;
+          top: 2.69vw;
+          .word1 {
+            width: 4.86vw;
+            height: 1.2vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(13, 192, 167, 1);
+            font-size: 0.68vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.2vw;
+            text-align: left;
+          }
+        }
+        .section2 {
+          z-index: 16;
+          position: absolute;
+          left: 0;
+          top: 4.46vw;
+          width: 31.32vw;
+          height: 0.12vw;
+          background: url(./img/SketchPng055f240760819a2f67a360edb5ce30e3980f90fe86d96b4662f538d284ed2201.png)
+            100% no-repeat;
+        }
+        .word2 {
+          z-index: 10;
+          position: absolute;
+          left: 9.95vw;
+          top: 6.69vw;
+          width: 11.66vw;
+          height: 1.15vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 182, 156, 1);
+          font-size: 1.2vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.2vw;
+          text-align: right;
+        }
+        .img1 {
+          z-index: 8;
+          position: absolute;
+          left: 8.8vw;
+          top: 10.29vw;
+          width: 13.72vw;
+          height: 13.72vw;
+        }
+        .section3 {
+          position: absolute;
+          left: 5.95vw;
+          top: 26.29vw;
+          width: 19.72vw;
+          height: 1.83vw;
+          overflow-wrap: break-word;
+          text-align: right;
+          font-size: 0;
+          .info2 {
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .txt1 {
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 182, 156, 1);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .word3 {
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .img2 {
+      z-index: 4;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 53.49vw;
+    }
+  }
+}

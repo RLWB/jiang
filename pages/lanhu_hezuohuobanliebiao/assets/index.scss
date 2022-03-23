@@ -1,0 +1,431 @@
+.page {
+  position: relative;
+  width: 1750px;
+  height: 2159px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .layer1 {
+    width: 1750px;
+    height: 2159px;
+    .group1 {
+      height: 129px;
+      background-color: rgba(0, 182, 156, 1);
+      width: 1750px;
+      .outer1 {
+        width: 1400px;
+        height: 88px;
+        margin: 21px 0 0 175px;
+        .pic1 {
+          width: 104px;
+          height: 88px;
+        }
+        .word1 {
+          width: 72px;
+          height: 18px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 18px;
+          margin: 32px 0 0 243px;
+        }
+        .txt1 {
+          width: 72px;
+          height: 18px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 18px;
+          margin: 32px 0 0 55px;
+        }
+        .info1 {
+          width: 126px;
+          height: 18px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 18px;
+          margin: 32px 0 0 47px;
+        }
+        .word2 {
+          width: 72px;
+          height: 18px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 18px;
+          margin: 32px 0 0 47px;
+        }
+        .box1 {
+          height: 40px;
+          border: 1px solid rgba(5, 134, 116, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 336px;
+          margin: 25px 0 0 50px;
+          .word3 {
+            width: 272px;
+            height: 16px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(205, 205, 205, 1);
+            font-size: 16px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 16px;
+            margin: 13px 0 0 10px;
+          }
+        }
+        .word4 {
+          width: 80px;
+          height: 18px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 18px;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 18px;
+          margin: 36px 0 0 96px;
+        }
+      }
+    }
+    .word5 {
+      width: 142px;
+      height: 14px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 14px;
+      font-family: SourceHanSansCN-Regular;
+      white-space: nowrap;
+      line-height: 14px;
+      text-align: left;
+      margin: 23px 0 0 175px;
+    }
+    .group2 {
+      width: 1400px;
+      height: 1250px;
+      flex-wrap: wrap;
+      margin: 63px 0 0 175px;
+      .pic2 {
+        width: 180px;
+        height: 180px;
+        margin: 0 64px 30px 0;
+        &:nth-child(6n) {
+          margin-right: 0;
+        }
+        &:nth-last-child(-n + 6) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .group3 {
+      z-index: 43;
+      height: 90px;
+      background: url(./img/SketchPng93dabbd71981a771c548adb3dade1967bb115112dd228063127166366ec68f1d.png)
+        0px -15px no-repeat;
+      margin-top: 75px;
+      width: 1750px;
+      position: relative;
+      .group4 {
+        width: 1361px;
+        height: 71px;
+        margin: 10px 0 0 195px;
+        .block1 {
+          z-index: 178;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          background: url(./img/SketchPngdd37a2c628da6be203f63d2d701792bfbd65db0cbbde07ad2ee62373c563a146.png)
+            100% no-repeat;
+          margin-top: 31px;
+          .label1 {
+            z-index: 179;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .block2 {
+          width: 605px;
+          height: 35px;
+          margin: 36px 0 0 15px;
+          .section1 {
+            width: 605px;
+            height: 12px;
+            .word6 {
+              width: 60px;
+              height: 12px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(0, 0, 0, 0.65);
+              font-size: 12px;
+              font-family: SourceHanSansCN-Bold;
+              white-space: nowrap;
+              line-height: 12px;
+              text-align: left;
+            }
+            .word7 {
+              width: 143px;
+              height: 12px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(0, 0, 0, 0.65);
+              font-size: 12px;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 12px;
+              text-align: left;
+              margin-left: 22px;
+            }
+            .txt2 {
+              width: 71px;
+              height: 12px;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(0, 0, 0, 0.65);
+              font-size: 12px;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 12px;
+              text-align: left;
+              margin-left: 309px;
+            }
+          }
+          .pic3 {
+            width: 600px;
+            height: 8px;
+            margin-top: 15px;
+          }
+        }
+        .icon1 {
+          width: 40px;
+          height: 40px;
+          margin: 31px 0 0 50px;
+        }
+        .icon2 {
+          width: 40px;
+          height: 40px;
+          margin: 31px 0 0 30px;
+        }
+        .icon3 {
+          width: 40px;
+          height: 40px;
+          margin: 31px 0 0 30px;
+        }
+        .img1 {
+          width: 88px;
+          height: 54px;
+          margin: 9px 0 0 12px;
+        }
+        .icon4 {
+          width: 24px;
+          height: 24px;
+          margin: 39px 0 0 8px;
+        }
+        .label2 {
+          width: 24px;
+          height: 24px;
+          margin: 39px 0 0 40px;
+        }
+        .block3 {
+          height: 24px;
+          background: url(./img/SketchPngf8100469d48bcb7c9fa761647581ae93b986f5ad95666e86c647891117777c07.png)
+            100% no-repeat;
+          width: 24px;
+          margin: 39px 0 0 40px;
+          .label3 {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .icon5 {
+          width: 24px;
+          height: 24px;
+          margin: 39px 0 0 48px;
+        }
+        .pic4 {
+          width: 80px;
+          height: 8px;
+          margin: 47px 0 0 5px;
+        }
+        .block4 {
+          width: 24px;
+          height: 63px;
+          margin-left: 30px;
+          .label4 {
+            width: 20px;
+            height: 20px;
+            margin-left: 2px;
+          }
+          .label5 {
+            width: 24px;
+            height: 24px;
+            margin-top: 19px;
+          }
+        }
+      }
+      .group5 {
+        z-index: 73;
+        height: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 182, 156, 1);
+        width: 22px;
+        position: absolute;
+        left: 1331px;
+        top: 47px;
+        .word8 {
+          width: 17px;
+          height: 8px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 8px;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 8px;
+          text-align: right;
+          margin: 1px 0 0 2px;
+        }
+      }
+    }
+    .group6 {
+      height: 515px;
+      background-color: rgba(56, 64, 62, 1);
+      width: 1750px;
+      .outer2 {
+        width: 1260px;
+        height: 391px;
+        margin: 64px 0 0 246px;
+        .layer2 {
+          width: 760px;
+          height: 21px;
+          margin-left: 249px;
+          .info2 {
+            width: 74px;
+            height: 21px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: Times-Roman;
+            white-space: nowrap;
+            line-height: 18px;
+          }
+          .word9 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+          .word10 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+          .word11 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+          .word12 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+          .info3 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+          .word13 {
+            width: 72px;
+            height: 18px;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 18px;
+            margin-top: 2px;
+          }
+        }
+        .layer3 {
+          width: 1260px;
+          height: 1px;
+          background: url(./img/SketchPnga8144cc71288101f657a2b9545bd7d273df0ff60d5abd953d48b88c94bf85d49.png)
+            0px 0px no-repeat;
+          margin-top: 34px;
+        }
+        .img2 {
+          width: 104px;
+          height: 88px;
+          margin: 55px 0 0 577px;
+        }
+        .paragraph1 {
+          width: 775px;
+          height: 176px;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 14px;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 22px;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 16px 0 0 234px;
+        }
+      }
+    }
+  }
+}

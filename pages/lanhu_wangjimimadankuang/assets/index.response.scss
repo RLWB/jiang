@@ -1,0 +1,359 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 53.49vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .main1 {
+    z-index: 3;
+    height: 53.49vw;
+    overflow: hidden;
+    background: url(./img/SketchPng40a2524ff8bdcf562ef5ecc9972c5797c15a84a93612af2f83b2f9855287817f.png)
+      100% no-repeat;
+    width: 100vw;
+    position: relative;
+    .bd1 {
+      z-index: 5;
+      position: relative;
+      width: 100vw;
+      height: 53.49vw;
+      overflow: hidden;
+      background: url(./img/SketchPngf5f5b215b91710966081ef2437e25d6670a5033d2b6a6bf4e6bc615fd981c77c.png)
+        100% no-repeat;
+      .group1 {
+        z-index: 7;
+        position: absolute;
+        left: 34.23vw;
+        top: 7.83vw;
+        width: 31.55vw;
+        height: 37.95vw;
+        border: 1px solid rgba(242, 242, 242, 0.72);
+        box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+        overflow: hidden;
+        background: url(./img/SketchPngeab75330effce0307b10307b35c3fe5bd50724a296dc3df489f55b584574353f.png) -0.86vw -0.75vw
+          no-repeat;
+        background-size: 33.14vw 39.54vw;
+        .word1 {
+          z-index: 9;
+          position: absolute;
+          left: 12.63vw;
+          top: 1.32vw;
+          width: 6.29vw;
+          height: 2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+        .icon1 {
+          z-index: 70;
+          position: absolute;
+          left: 28.23vw;
+          top: 1.55vw;
+          width: 1.49vw;
+          height: 1.49vw;
+        }
+        .section1 {
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          top: 4.46vw;
+          width: 31.32vw;
+          height: 0.12vw;
+          background: url(./img/SketchPng055f240760819a2f67a360edb5ce30e3980f90fe86d96b4662f538d284ed2201.png)
+            100% no-repeat;
+        }
+        .section2 {
+          z-index: 23;
+          height: 3.2vw;
+          border: 1px solid rgba(0, 182, 156, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 0.58vw;
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 6.86vw;
+          .box1 {
+            width: 13.55vw;
+            height: 1.83vw;
+            .icon2 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.12vw;
+            }
+            .block1 {
+              width: 0.06vw;
+              height: 1.66vw;
+              background: url(./img/SketchPng659fc0bd76b81987b1b33b6a6240841c3d7ed4cd0f360302bad7561927ecdaf3.png) -0.06vw -0.06vw
+                no-repeat;
+              background-size: 0.17vw 1.77vw;
+              margin: 0.11vw 0 0 0.8vw;
+            }
+            .txt1 {
+              width: 10.92vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              margin-left: 0.18vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section3 {
+          z-index: 53;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 11.2vw;
+          padding: 0.34vw 0 0 0.57vw;
+          .wrap1 {
+            width: 21.89vw;
+            height: 2.46vw;
+            .label1 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.4vw;
+            }
+            .txt2 {
+              width: 10.92vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              margin-top: 0.29vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .block2 {
+              z-index: 56;
+              height: 2.46vw;
+              background-color: rgba(114, 166, 159, 1);
+              width: 6.86vw;
+              position: relative;
+              .main2 {
+                z-index: 59;
+                height: 2.46vw;
+                background-color: rgba(0, 182, 156, 1);
+                width: 6.86vw;
+                position: static;
+                left: 54.23vw;
+                top: 19.43vw;
+                padding: 0.8vw 0 0 0.68vw;
+                .word2 {
+                  width: 5.43vw;
+                  height: 0.8vw;
+                  display: block;
+                  overflow-wrap: break-word;
+                  color: rgba(255, 255, 255, 1);
+                  font-size: 0.8vw;
+                  font-family: SourceHanSansCN-Regular;
+                  white-space: nowrap;
+                  line-height: 0.8vw;
+                  text-align: right;
+                }
+              }
+              .word3 {
+                z-index: 57;
+                position: absolute;
+                left: 0.4vw;
+                top: 0.8vw;
+                width: 6.12vw;
+                height: 0.8vw;
+                display: block;
+                overflow-wrap: break-word;
+                color: rgba(255, 255, 255, 1);
+                font-size: 0.8vw;
+                font-family: SourceHanSansCN-Regular;
+                white-space: nowrap;
+                line-height: 0.8vw;
+                text-align: right;
+              }
+            }
+          }
+        }
+        .section4 {
+          z-index: 33;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 0.58vw;
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 15.55vw;
+          .bd2 {
+            width: 21.32vw;
+            height: 1.83vw;
+            .icon3 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.12vw;
+            }
+            .info1 {
+              width: 18.52vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section5 {
+          z-index: 43;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 0.58vw;
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 19.89vw;
+          .mod1 {
+            width: 21.32vw;
+            height: 1.83vw;
+            .label2 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.12vw;
+            }
+            .word4 {
+              width: 18.52vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .section6 {
+          z-index: 13;
+          height: 2.86vw;
+          background-color: rgba(6, 122, 105, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 28.63vw;
+          .mod2 {
+            z-index: 16;
+            height: 2.86vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 22.86vw;
+            position: static;
+            left: 38.58vw;
+            top: 36.46vw;
+            .word5 {
+              width: 11.09vw;
+              height: 1.03vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 1.02vw;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 1.03vw;
+              text-align: right;
+            }
+          }
+          .info2 {
+            z-index: 14;
+            position: absolute;
+            left: 6.35vw;
+            top: 0.92vw;
+            width: 10.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: right;
+          }
+        }
+        .word6 {
+          z-index: 19;
+          position: absolute;
+          left: 9.43vw;
+          top: 33.78vw;
+          width: 6.29vw;
+          height: 2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 1.08vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 2vw;
+          text-align: right;
+        }
+        .section7 {
+          z-index: 21;
+          position: absolute;
+          left: 15.78vw;
+          top: 33.89vw;
+          width: 0.06vw;
+          height: 1.83vw;
+          background: url(./img/SketchPng2c029c99e55a37a1b6681df5ad7db90ac659b81080fdf6c2bea281a516a4e479.png)
+            0vw 0vw no-repeat;
+          background-size: 0.11vw 1.82vw;
+        }
+        .word7 {
+          z-index: 20;
+          position: absolute;
+          left: 15.78vw;
+          top: 33.78vw;
+          width: 6.29vw;
+          height: 2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 1.08vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 2vw;
+          text-align: right;
+        }
+      }
+    }
+    .pic1 {
+      z-index: 4;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 53.49vw;
+    }
+  }
+}

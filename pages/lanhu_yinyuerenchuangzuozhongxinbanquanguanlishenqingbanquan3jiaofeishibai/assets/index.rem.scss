@@ -1,0 +1,874 @@
+.page {
+  position: relative;
+  width: 46.667rem;
+  height: 47.574rem;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .mod1 {
+    width: 46.667rem;
+    height: 47.574rem;
+    .block1 {
+      height: 3.414rem;
+      background-color: rgba(0, 182, 156, 1);
+      padding-left: 2.694rem;
+      width: 46.667rem;
+      .main1 {
+        width: 40.827rem;
+        height: 2.347rem;
+        .img1 {
+          width: 2.774rem;
+          height: 2.347rem;
+        }
+        .word1 {
+          width: 6.187rem;
+          height: 1.254rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.96rem;
+          font-family: YouSheBiaoTiHei;
+          white-space: nowrap;
+          line-height: 1.254rem;
+          margin: 0.56rem 0 0 0.534rem;
+        }
+        .main2 {
+          height: 1.067rem;
+          border: 1px solid rgba(5, 134, 116, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 8.96rem;
+          margin: 0.64rem 0 0 18.267rem;
+          padding: 0.32rem 0 0 0.24rem;
+          .info1 {
+            width: 7.254rem;
+            height: 0.427rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(205, 205, 205, 1);
+            font-size: 0.426rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.427rem;
+          }
+        }
+        .main3 {
+          width: 1.067rem;
+          height: 1.067rem;
+          border-radius: 50%;
+          background: url(./img/SketchPngdbf6ac907b178c6c1c6d7735676633c456a5b7bf3441050a171044228bc9813e.png)
+            100% no-repeat;
+          margin: 0.64rem 0 0 0.534rem;
+        }
+        .txt1 {
+          width: 1.44rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          margin: 0.934rem 0 0 0.267rem;
+        }
+        .icon1 {
+          width: 0.534rem;
+          height: 0.534rem;
+          margin: 0.907rem 0 0 0.267rem;
+        }
+      }
+    }
+    .block2 {
+      height: 1.6rem;
+      background-color: rgba(250, 250, 250, 1);
+      margin-top: 0.027rem;
+      padding-left: 4.667rem;
+      width: 46.667rem;
+      .main4 {
+        width: 7.2rem;
+        height: 0.374rem;
+        overflow-wrap: break-word;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 0;
+        .txt2 {
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 0.374rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word2 {
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Bold;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.374rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .txt3 {
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.374rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .block3 {
+      z-index: 100;
+      position: relative;
+      width: 37.334rem;
+      height: 4.8rem;
+      overflow: hidden;
+      background: url(./img/SketchPng7de5b767091e336af2fc2ab19bb87569caf4356fb31426b42f75c3501e48ba95.png)
+        100% no-repeat;
+      margin: 0.8rem 0 0 4.667rem;
+      .block4 {
+        z-index: 104;
+        height: 1.174rem;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 1.174rem;
+        position: absolute;
+        left: 7.92rem;
+        top: 1.28rem;
+        .word3 {
+          width: 0.374rem;
+          height: 0.64rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.64rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.64rem;
+          text-align: right;
+        }
+      }
+      .block5 {
+        z-index: 116;
+        position: absolute;
+        left: 9.627rem;
+        top: 1.867rem;
+        width: 7.867rem;
+        height: 0.027rem;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.027rem
+          0rem no-repeat;
+        background-size: 7.84rem 0.054rem;
+      }
+      .block6 {
+        z-index: 109;
+        height: 1.174rem;
+        border-radius: 50%;
+        background: url(./img/SketchPng7b6b32e83ee01ed5e7048362b388b6d27a1ae2835358426ce88b28e1d8666af7.png)
+          100% no-repeat;
+        width: 1.174rem;
+        position: absolute;
+        left: 18.08rem;
+        top: 1.28rem;
+        .txt4 {
+          width: 0.374rem;
+          height: 0.64rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.64rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.64rem;
+          text-align: right;
+        }
+      }
+      .block7 {
+        z-index: 117;
+        position: absolute;
+        left: 19.814rem;
+        top: 1.867rem;
+        width: 7.867rem;
+        height: 0.027rem;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.027rem
+          0rem no-repeat;
+        background-size: 7.84rem 0.054rem;
+      }
+      .block8 {
+        z-index: 114;
+        height: 1.174rem;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 1.174rem;
+        position: absolute;
+        left: 28.187rem;
+        top: 1.28rem;
+        .info2 {
+          width: 0.374rem;
+          height: 0.64rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.64rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.64rem;
+          text-align: right;
+        }
+      }
+      .word4 {
+        z-index: 102;
+        position: absolute;
+        left: 7.307rem;
+        top: 2.88rem;
+        width: 2.4rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: right;
+      }
+      .word5 {
+        z-index: 107;
+        position: absolute;
+        left: 17.227rem;
+        top: 2.88rem;
+        width: 2.88rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: right;
+      }
+      .word6 {
+        z-index: 112;
+        position: absolute;
+        left: 27.094rem;
+        top: 2.88rem;
+        width: 3.36rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: right;
+      }
+    }
+    .txt5 {
+      width: 3.84rem;
+      height: 0.64rem;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(64, 63, 63, 1);
+      font-size: 0.64rem;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 0.64rem;
+      text-align: right;
+      margin: 0.8rem 0 0 21.094rem;
+    }
+    .block9 {
+      width: 15.254rem;
+      height: 1.174rem;
+      margin: 1.067rem 0 0 14.187rem;
+      .word7 {
+        width: 1.92rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.294rem;
+      }
+      .mod2 {
+        height: 1.174rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 0.507rem;
+        width: 12.8rem;
+        .txt6 {
+          width: 1.44rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(198, 198, 198, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: left;
+        }
+      }
+    }
+    .block10 {
+      width: 15.254rem;
+      height: 1.174rem;
+      margin: 0.8rem 0 0 14.187rem;
+      .txt7 {
+        width: 1.92rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.294rem;
+      }
+      .box1 {
+        height: 1.174rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 0.507rem;
+        width: 12.8rem;
+        .txt8 {
+          width: 1.44rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(198, 198, 198, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: left;
+        }
+      }
+    }
+    .block11 {
+      width: 18.16rem;
+      height: 1.174rem;
+      margin: 0.8rem 0 0 14.667rem;
+      .txt9 {
+        width: 1.44rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.294rem;
+      }
+      .section1 {
+        height: 1.174rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-left: 0.534rem;
+        width: 12.8rem;
+        padding: 0.294rem 0 0 0.507rem;
+        .mod3 {
+          width: 11.92rem;
+          height: 0.56rem;
+          .txt10 {
+            width: 1.44rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(198, 198, 198, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            text-align: left;
+            margin-top: 0.027rem;
+          }
+          .icon2 {
+            width: 0.56rem;
+            height: 0.56rem;
+          }
+        }
+      }
+      .txt11 {
+        width: 3.014rem;
+        height: 0.427rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 182, 156, 1);
+        font-size: 0.426rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.427rem;
+        text-align: left;
+        margin: 0.4rem 0 0 0.374rem;
+      }
+    }
+    .block12 {
+      width: 15.254rem;
+      height: 1.174rem;
+      margin: 0.8rem 0 0 14.187rem;
+      .word8 {
+        width: 1.92rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.294rem;
+      }
+      .box2 {
+        height: 1.174rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        width: 12.8rem;
+        padding: 0.294rem 0 0 0.507rem;
+        .layer1 {
+          width: 11.92rem;
+          height: 0.56rem;
+          .info3 {
+            width: 3.36rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(198, 198, 198, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            text-align: left;
+            margin-top: 0.027rem;
+          }
+          .label1 {
+            width: 0.56rem;
+            height: 0.56rem;
+          }
+        }
+      }
+    }
+    .block13 {
+      width: 6.187rem;
+      height: 1.174rem;
+      margin: 0.8rem 0 0 14.187rem;
+      .word9 {
+        width: 1.92rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.347rem;
+      }
+      .group1 {
+        height: 1.174rem;
+        border: 1px solid rgba(0, 182, 156, 1);
+        background-color: rgba(255, 255, 255, 1);
+        width: 3.734rem;
+        .word10 {
+          width: 2.667rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 182, 156, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: right;
+        }
+      }
+    }
+    .block14 {
+      width: 15.254rem;
+      height: 1.174rem;
+      margin: 0.8rem 0 0 14.187rem;
+      .txt12 {
+        width: 1.92rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+        margin-top: 0.294rem;
+      }
+      .mod4 {
+        height: 1.174rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 0.507rem;
+        width: 12.8rem;
+        .txt13 {
+          width: 3.36rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(198, 198, 198, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: left;
+        }
+      }
+    }
+    .block15 {
+      width: 8.374rem;
+      height: 0.534rem;
+      margin: 1.12rem 0 0 13.227rem;
+      .txt14 {
+        width: 2.88rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: center;
+      }
+      .bd1 {
+        height: 0.534rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-left: 0.534rem;
+        width: 0.534rem;
+        .outer1 {
+          width: 0.374rem;
+          height: 0.374rem;
+          background-color: rgba(0, 182, 156, 1);
+        }
+      }
+      .word11 {
+        width: 1.44rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: left;
+        margin: 0.027rem 0 0 0.267rem;
+      }
+      .bd2 {
+        width: 0.534rem;
+        height: 0.534rem;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-left: 0.427rem;
+      }
+      .word12 {
+        width: 1.44rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: left;
+        margin: 0.027rem 0 0 0.32rem;
+      }
+    }
+    .block16 {
+      height: 1.334rem;
+      background-color: rgba(0, 182, 156, 1);
+      width: 4.32rem;
+      margin: 2.48rem 0 0 21.174rem;
+      .word13 {
+        width: 2.667rem;
+        height: 0.48rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(255, 255, 255, 1);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 0.48rem;
+        text-align: right;
+      }
+    }
+    .block17 {
+      height: 13.734rem;
+      background-color: rgba(56, 64, 62, 1);
+      margin-top: 4.187rem;
+      width: 46.667rem;
+      padding: 1.707rem 0 0 6.56rem;
+      .outer2 {
+        width: 33.6rem;
+        height: 10.427rem;
+        .section2 {
+          width: 20.267rem;
+          height: 0.56rem;
+          margin-left: 6.64rem;
+          .info4 {
+            width: 1.974rem;
+            height: 0.56rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: Times-Roman;
+            white-space: nowrap;
+            line-height: 0.48rem;
+          }
+          .info5 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+          .info6 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+          .txt15 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+          .word14 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+          .txt16 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+          .txt17 {
+            width: 1.92rem;
+            height: 0.48rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 0.48rem;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.48rem;
+            margin-top: 0.054rem;
+          }
+        }
+        .section3 {
+          width: 33.6rem;
+          height: 0.027rem;
+          background: url(./img/SketchPnga8144cc71288101f657a2b9545bd7d273df0ff60d5abd953d48b88c94bf85d49.png)
+            0rem 0rem no-repeat;
+          background-size: 33.6rem 0.054rem;
+          margin-top: 0.907rem;
+        }
+        .img2 {
+          width: 2.774rem;
+          height: 2.347rem;
+          margin: 1.467rem 0 0 15.387rem;
+        }
+        .paragraph1 {
+          width: 20.667rem;
+          height: 4.694rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 0.587rem;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0.427rem 0 0 6.24rem;
+        }
+      }
+    }
+  }
+  .mod5 {
+    z-index: 118;
+    height: 47.574rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 46.667rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 11.094rem 0 0 14.507rem;
+    .main5 {
+      z-index: 120;
+      position: relative;
+      width: 17.574rem;
+      height: 12.374rem;
+      border: 1px solid rgba(242, 242, 242, 0.72);
+      box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+      overflow: hidden;
+      background: url(./img/SketchPng25d9443e669c89025dca94fd605ba59cf05750a5ddd5727c9e917fe79fd74f29.png) -0.4rem -0.347rem
+        no-repeat;
+      background-size: 18.32rem 13.12rem;
+      .word15 {
+        z-index: 127;
+        position: absolute;
+        left: 0;
+        top: -0.026rem;
+        width: 17.52rem;
+        height: 2.134rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 1);
+        font-size: 0.64rem;
+        font-family: SourceHanSansCN-Medium;
+        line-height: 0.64rem;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .icon3 {
+        z-index: 131;
+        position: absolute;
+        left: 15.814rem;
+        top: 0.64rem;
+        width: 0.854rem;
+        height: 0.854rem;
+      }
+      .bd3 {
+        z-index: 130;
+        position: absolute;
+        left: 0;
+        top: 2.134rem;
+        width: 17.52rem;
+        height: 0.027rem;
+        background: url(./img/SketchPng8b1d5c54ad11032bcefc8a4cab10b45fa4595fa2d198ba07c3e6430f972342ac.png)
+          100% no-repeat;
+      }
+      .txt18 {
+        z-index: 128;
+        position: absolute;
+        left: 2.88rem;
+        top: 3.467rem;
+        width: 11.787rem;
+        height: 2.32rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 1);
+        font-size: 0.64rem;
+        font-family: SourceHanSansCN-Medium;
+        line-height: 0.854rem;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .paragraph2 {
+        z-index: 129;
+        position: absolute;
+        left: 2.88rem;
+        top: 6.32rem;
+        width: 11.787rem;
+        height: 1.334rem;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 0.48rem;
+        font-family: SourceHanSansCN-Medium;
+        line-height: 0.667rem;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .bd4 {
+        z-index: 125;
+        height: 1.334rem;
+        background-color: rgba(175, 185, 184, 1);
+        width: 4.32rem;
+        position: absolute;
+        left: 3.84rem;
+        top: 9.28rem;
+        .word16 {
+          width: 2.667rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: right;
+        }
+      }
+      .bd5 {
+        z-index: 122;
+        height: 1.334rem;
+        background-color: rgba(0, 182, 156, 1);
+        width: 4.32rem;
+        position: absolute;
+        left: 9.36rem;
+        top: 9.28rem;
+        .info7 {
+          width: 2.667rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

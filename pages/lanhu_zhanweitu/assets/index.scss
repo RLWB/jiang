@@ -1,0 +1,250 @@
+.page {
+  position: relative;
+  width: 1750px;
+  height: 2114px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .section1 {
+    width: 1362px;
+    height: 28px;
+    margin: 96px 0 0 79px;
+    .word1 {
+      width: 224px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: left;
+    }
+    .word2 {
+      width: 140px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+      margin-left: 405px;
+    }
+    .txt1 {
+      width: 168px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+      margin-left: 425px;
+    }
+  }
+  .section2 {
+    width: 1689px;
+    height: 283px;
+    margin: 37px 0 0 56px;
+    .img1 {
+      width: 500px;
+      height: 270px;
+    }
+    .img2 {
+      width: 500px;
+      height: 270px;
+      margin-left: 87px;
+    }
+    .pic1 {
+      width: 500px;
+      height: 270px;
+      margin: 13px 0 0 102px;
+    }
+  }
+  .section3 {
+    width: 1620px;
+    height: 56px;
+    margin: 48px 0 0 79px;
+    .word3 {
+      width: 454px;
+      height: 56px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 22px;
+      font-family: SourceHanSansCN-Regular;
+      line-height: 33px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .word4 {
+      width: 454px;
+      height: 56px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 22px;
+      font-family: SourceHanSansCN-Regular;
+      line-height: 33px;
+      text-align: right;
+      margin-left: 133px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .info1 {
+      width: 454px;
+      height: 56px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 22px;
+      font-family: SourceHanSansCN-Regular;
+      line-height: 33px;
+      text-align: right;
+      margin-left: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .section4 {
+    width: 741px;
+    height: 28px;
+    margin: 83px 0 0 79px;
+    .info2 {
+      width: 112px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: left;
+    }
+    .word5 {
+      width: 112px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+    }
+  }
+  .section5 {
+    width: 1110px;
+    height: 270px;
+    margin: 37px 0 0 56px;
+    .pic2 {
+      width: 500px;
+      height: 270px;
+    }
+    .pic3 {
+      width: 500px;
+      height: 270px;
+    }
+  }
+  .section6 {
+    width: 1041px;
+    height: 56px;
+    margin: 61px 0 0 79px;
+    .txt2 {
+      width: 454px;
+      height: 56px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 22px;
+      font-family: SourceHanSansCN-Regular;
+      line-height: 33px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .paragraph1 {
+      width: 454px;
+      height: 56px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 22px;
+      font-family: SourceHanSansCN-Regular;
+      line-height: 33px;
+      text-align: right;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .section7 {
+    width: 1373px;
+    height: 28px;
+    margin: 83px 0 0 92px;
+    .info3 {
+      width: 280px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+    }
+    .word6 {
+      width: 336px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+      margin-left: 216px;
+    }
+    .word7 {
+      width: 280px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(40, 40, 40, 1);
+      font-size: 28px;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: right;
+      margin-left: 261px;
+    }
+  }
+  .section8 {
+    width: 1339px;
+    height: 246px;
+    margin: 50px 0 624px 92px;
+    .pic4 {
+      width: 246px;
+      height: 246px;
+    }
+    .img3 {
+      width: 430px;
+      height: 246px;
+      margin-left: 250px;
+    }
+    .pic5 {
+      width: 246px;
+      height: 246px;
+      margin-left: 167px;
+    }
+  }
+}

@@ -1,0 +1,369 @@
+.page {
+  position: relative;
+  width: 46.667rem;
+  height: 24.96rem;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .main1 {
+    width: 37.094rem;
+    height: 24.96rem;
+    .block1 {
+      z-index: 3;
+      height: 24.96rem;
+      overflow: hidden;
+      background: url(./img/SketchPng5da4aac3292cd90a187bb91af0845a5d772159a9a1b69ec9b2eb42e83765aa29.png)
+        100% no-repeat;
+      width: 19.92rem;
+      position: relative;
+      .mod1 {
+        z-index: 5;
+        position: relative;
+        width: 19.92rem;
+        height: 24.96rem;
+        overflow: hidden;
+        background: url(./img/SketchPng57360d43ad81763cc1581f65dbf9020e3d1cc47ad8805d15a495cac2c8aa49b4.png)
+          100% no-repeat;
+        .pic1 {
+          z-index: 6;
+          position: absolute;
+          left: 9.947rem;
+          top: 10.134rem;
+          width: 2.774rem;
+          height: 2.347rem;
+        }
+      }
+      .pic2 {
+        z-index: 4;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 19.92rem;
+        height: 24.96rem;
+      }
+    }
+    .block2 {
+      width: 10.747rem;
+      height: 18.32rem;
+      margin-top: 3.44rem;
+      .bd1 {
+        width: 10.694rem;
+        height: 1.254rem;
+        overflow-wrap: break-word;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 0;
+        .info1 {
+          font-size: 0.746rem;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 0.88rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word1 {
+          font-size: 0.64rem;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 0.88rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .bd2 {
+        width: 10.694rem;
+        height: 0.56rem;
+        margin: 1.04rem 0 0 0.027rem;
+        .txt1 {
+          width: 2.934rem;
+          height: 0.534rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 0.56rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.56rem;
+          text-align: right;
+          margin-top: 0.027rem;
+        }
+        .txt2 {
+          width: 2.427rem;
+          height: 0.534rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.56rem;
+          font-family: SourceHanSansCN-Bold;
+          white-space: nowrap;
+          line-height: 0.56rem;
+          text-align: right;
+          margin-top: 0.027rem;
+        }
+        .info2 {
+          width: 2.427rem;
+          height: 0.56rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 0.56rem;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 0.56rem;
+          text-align: right;
+        }
+      }
+      .bd3 {
+        width: 2.134rem;
+        height: 0.107rem;
+        background-color: rgba(22, 219, 191, 1);
+        margin: 0.374rem 0 0 4.56rem;
+      }
+      .bd4 {
+        z-index: 44;
+        height: 1.494rem;
+        border: 1px solid rgba(0, 182, 156, 1);
+        background-color: rgba(255, 255, 255, 1);
+        width: 10.667rem;
+        position: relative;
+        margin: 0.774rem 0 0 0.08rem;
+        padding: 0.347rem 0 0 0.267rem;
+        .group1 {
+          width: 2.24rem;
+          height: 0.774rem;
+          .bd5 {
+            width: 0.747rem;
+            height: 0.747rem;
+            background: url(./img/SketchPng06ddda0606840f9440ef1ca0df07396c442d957c35e23a6c3d55bf4cae29814a.png)
+              0rem 0rem no-repeat;
+            background-size: 0.774rem 0.747rem;
+          }
+          .bd6 {
+            width: 0.027rem;
+            height: 0.774rem;
+            background: url(./img/SketchPnga95c37b543bd3df4e282d1253b8cad6f978afcb9ce1ca5f963f8670e67057ddf.png) -0.027rem -0.027rem
+              no-repeat;
+            background-size: 0.08rem 0.827rem;
+          }
+        }
+        .word2 {
+          z-index: 45;
+          position: absolute;
+          left: 1.52rem;
+          top: 0.32rem;
+          width: 5.094rem;
+          height: 0.854rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.426rem;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 0.64rem;
+          text-align: left;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .bd7 {
+        height: 1.494rem;
+        border: 1px solid rgba(218, 218, 218, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 0.267rem;
+        width: 10.667rem;
+        margin: 0.427rem 0 0 0.08rem;
+        .section1 {
+          width: 6.4rem;
+          height: 0.854rem;
+          .icon1 {
+            width: 0.747rem;
+            height: 0.747rem;
+            margin-top: 0.054rem;
+          }
+          .info3 {
+            width: 5.094rem;
+            height: 0.854rem;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(96, 96, 96, 0.25);
+            font-size: 0.426rem;
+            font-family: SourceHanSansCN-Medium;
+            line-height: 0.64rem;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .bd8 {
+        width: 10.667rem;
+        height: 0.88rem;
+        margin: 0.267rem 0 0 0.08rem;
+        .word3 {
+          width: 2.24rem;
+          height: 0.854rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 182, 156, 1);
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 0.64rem;
+          text-align: left;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .group2 {
+          height: 0.374rem;
+          border: 1px solid rgba(199, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 0.374rem;
+          margin: 0.24rem 0 0 5.547rem;
+          .box1 {
+            width: 0.214rem;
+            height: 0.214rem;
+            background-color: rgba(0, 182, 156, 1);
+          }
+        }
+        .txt3 {
+          width: 2.24rem;
+          height: 0.854rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.45);
+          font-size: 0.373rem;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 0.64rem;
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0.027rem 0 0 0.267rem;
+        }
+      }
+      .bd9 {
+        height: 1.334rem;
+        background-color: rgba(0, 182, 156, 1);
+        width: 10.667rem;
+        margin: 1.2rem 0 0 0.08rem;
+        .word4 {
+          width: 2.667rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: right;
+        }
+      }
+      .bd10 {
+        height: 1.334rem;
+        background-color: rgba(0, 113, 182, 1);
+        padding-left: 3.014rem;
+        width: 10.667rem;
+        margin: 0.427rem 0 0 0.08rem;
+        .word5 {
+          width: 4.614rem;
+          height: 0.48rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.48rem;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 0.48rem;
+          text-align: right;
+        }
+      }
+      .bd11 {
+        width: 6.72rem;
+        height: 0.854rem;
+        margin: 0.56rem 0 0 0.054rem;
+        .layer1 {
+          height: 0.374rem;
+          border: 1px solid rgba(199, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
+          margin-top: 0.214rem;
+          width: 0.374rem;
+          .box2 {
+            width: 0.214rem;
+            height: 0.214rem;
+            background-color: rgba(0, 182, 156, 1);
+          }
+        }
+        .layer2 {
+          width: 6.08rem;
+          height: 0.854rem;
+          overflow-wrap: break-word;
+          text-align: left;
+          font-size: 0;
+          .txt4 {
+            font-size: 0.373rem;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 0.64rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .word6 {
+            font-size: 0.373rem;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 182, 156, 1);
+            line-height: 0.64rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .bd12 {
+        width: 10.72rem;
+        height: 0.854rem;
+        margin: 1.307rem 0 0 0.027rem;
+        .section2 {
+          width: 4.054rem;
+          height: 0.027rem;
+          background: url(./img/SketchPng5dbcbef2b100d23e9df3ed29dee20327e05329069c309025955502fc68dc7a26.png)
+            100% no-repeat;
+          margin-top: 0.427rem;
+        }
+        .info4 {
+          width: 2.56rem;
+          height: 0.854rem;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 0.32rem;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 0.64rem;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .section3 {
+          width: 4.054rem;
+          height: 0.027rem;
+          background: url(./img/SketchPng5dbcbef2b100d23e9df3ed29dee20327e05329069c309025955502fc68dc7a26.png)
+            100% no-repeat;
+          margin-top: 0.427rem;
+        }
+      }
+      .bd13 {
+        width: 1.28rem;
+        height: 1.28rem;
+        background: url(./img/SketchPngb9e8f094d825b3942de9a6d4a6ae75f0ee7ef65f5d0bd271222571d33d0f957c.png)
+          0rem 0rem no-repeat;
+        background-size: 1.307rem 1.28rem;
+        margin: 0.507rem 0 0 4.747rem;
+      }
+    }
+  }
+  .main2 {
+    z-index: 27;
+    position: absolute;
+    left: 26.347rem;
+    top: 6.747rem;
+    width: 10.747rem;
+    height: 0.027rem;
+    background: url(./img/SketchPng6c817c70b4400e4dbd84f7e1584295b6494cc441ce0db8a7e91f7179d5a57ab0.png)
+      100% no-repeat;
+  }
+}

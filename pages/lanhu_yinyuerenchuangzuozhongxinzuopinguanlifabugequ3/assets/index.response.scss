@@ -1,0 +1,861 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 169.32vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .bd1 {
+    width: 100vw;
+    height: 169.32vw;
+    .mod1 {
+      height: 7.32vw;
+      background-color: rgba(0, 182, 156, 1);
+      width: 100vw;
+      .mod2 {
+        width: 87.49vw;
+        height: 5.03vw;
+        margin: 1.14vw 0 0 5.77vw;
+        .pic1 {
+          width: 5.95vw;
+          height: 5.03vw;
+        }
+        .word1 {
+          width: 13.26vw;
+          height: 2.69vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 2.05vw;
+          font-family: YouSheBiaoTiHei;
+          white-space: nowrap;
+          line-height: 2.69vw;
+          margin: 1.2vw 0 0 1.14vw;
+        }
+        .mod3 {
+          height: 2.29vw;
+          border: 1px solid rgba(5, 134, 116, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 19.2vw;
+          margin: 1.37vw 0 0 39.14vw;
+          .word2 {
+            width: 15.55vw;
+            height: 0.92vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(205, 205, 205, 1);
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.92vw;
+            margin: 0.74vw 0 0 0.57vw;
+          }
+        }
+        .mod4 {
+          width: 2.29vw;
+          height: 2.29vw;
+          border-radius: 50%;
+          background: url(./img/SketchPngdbf6ac907b178c6c1c6d7735676633c456a5b7bf3441050a171044228bc9813e.png)
+            100% no-repeat;
+          margin: 1.37vw 0 0 1.14vw;
+        }
+        .txt1 {
+          width: 3.09vw;
+          height: 1.03vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.02vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.03vw;
+          margin: 2vw 0 0 0.57vw;
+        }
+        .label1 {
+          width: 1.15vw;
+          height: 1.15vw;
+          margin: 1.94vw 0 0 0.57vw;
+        }
+      }
+    }
+    .mod5 {
+      height: 3.43vw;
+      background-color: rgba(250, 250, 250, 1);
+      margin-top: 0.06vw;
+      width: 100vw;
+      .layer1 {
+        width: 15.26vw;
+        height: 0.8vw;
+        overflow-wrap: break-word;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 0;
+        margin: 1.31vw 0 0 10vw;
+        .info1 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info2 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Bold;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word3 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .mod6 {
+      z-index: 27;
+      position: relative;
+      width: 80vw;
+      height: 13.26vw;
+      overflow: hidden;
+      background: url(./img/SketchPngf789b840d1d6f6be56f04d43930021028c85e7ae9fc41880c806ace635f7dc27.png)
+        100% no-repeat;
+      margin: 1.14vw 0 0 10vw;
+      .word4 {
+        z-index: 51;
+        position: absolute;
+        left: 33.15vw;
+        top: 1.66vw;
+        width: 13.72vw;
+        height: 1.38vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 1.37vw;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 1.38vw;
+        text-align: right;
+      }
+      .main1 {
+        z-index: 31;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 7.49vw;
+        top: 5.72vw;
+        .txt2 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+          margin: 0.57vw 0 0 0.85vw;
+        }
+      }
+      .main2 {
+        z-index: 48;
+        position: absolute;
+        left: 10.69vw;
+        top: 6.98vw;
+        width: 16.86vw;
+        height: 0.06vw;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.06vw
+          0vw no-repeat;
+        background-size: 16.8vw 0.11vw;
+      }
+      .main3 {
+        z-index: 36;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 28.35vw;
+        top: 5.72vw;
+        .txt3 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+          margin: 0.57vw 0 0 0.85vw;
+        }
+      }
+      .main4 {
+        z-index: 49;
+        position: absolute;
+        left: 31.2vw;
+        top: 6.98vw;
+        width: 16.86vw;
+        height: 0.06vw;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.06vw
+          0vw no-repeat;
+        background-size: 16.8vw 0.11vw;
+      }
+      .main5 {
+        z-index: 41;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng7b6b32e83ee01ed5e7048362b388b6d27a1ae2835358426ce88b28e1d8666af7.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 48.98vw;
+        top: 5.72vw;
+        .info3 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+          margin: 0.57vw 0 0 0.85vw;
+        }
+      }
+      .main6 {
+        z-index: 50;
+        position: absolute;
+        left: 52.29vw;
+        top: 6.98vw;
+        width: 16.86vw;
+        height: 0.06vw;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.06vw
+          0vw no-repeat;
+        background-size: 16.8vw 0.11vw;
+      }
+      .main7 {
+        z-index: 46;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 69.89vw;
+        top: 5.72vw;
+        .info4 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+          margin: 0.57vw 0 0 0.85vw;
+        }
+      }
+      .word5 {
+        z-index: 29;
+        position: absolute;
+        left: 5.66vw;
+        top: 9.15vw;
+        width: 6.18vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+      .word6 {
+        z-index: 34;
+        position: absolute;
+        left: 27.43vw;
+        top: 9.15vw;
+        width: 4.12vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+      .word7 {
+        z-index: 39;
+        position: absolute;
+        left: 47.49vw;
+        top: 9.15vw;
+        width: 6.18vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+      .txt4 {
+        z-index: 44;
+        position: absolute;
+        left: 69.43vw;
+        top: 9.15vw;
+        width: 4.12vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+    }
+    .word8 {
+      width: 29.32vw;
+      height: 1.03vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 182, 156, 1);
+      font-size: 1.02vw;
+      font-family: SourceHanSansCN-Regular;
+      white-space: nowrap;
+      line-height: 1.03vw;
+      text-align: right;
+      margin: 2.68vw 0 0 35.37vw;
+    }
+    .info5 {
+      width: 16.46vw;
+      height: 1.38vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(64, 63, 63, 1);
+      font-size: 1.37vw;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 1.38vw;
+      text-align: right;
+      margin: 3.42vw 0 0 41.77vw;
+    }
+    .infoBox1 {
+      width: 37.72vw;
+      height: 30vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(64, 63, 63, 1);
+      font-size: 1.02vw;
+      font-family: SourceHanSansCN-Medium;
+      line-height: 1.2vw;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 1.71vw 0 0 31.14vw;
+    }
+    .word9 {
+      width: 10.98vw;
+      height: 1.38vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(64, 63, 63, 1);
+      font-size: 1.37vw;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 1.38vw;
+      text-align: right;
+      margin: 3.88vw 0 0 44.51vw;
+    }
+    .mod7 {
+      width: 37.72vw;
+      height: 28.52vw;
+      overflow-wrap: break-word;
+      text-align: left;
+      font-size: 0;
+      margin: 1.94vw 0 0 31.14vw;
+      .word10 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word11 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(16, 196, 170, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word12 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .txt5 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(17, 196, 171, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .txt6 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word13 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(16, 196, 170, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .infoBox2 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .txt7 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(17, 196, 170, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .paragraph1 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .mod8 {
+      height: 2.35vw;
+      border: 1px solid rgba(151, 151, 151, 0.45);
+      background-color: rgba(248, 255, 254, 1);
+      width: 37.78vw;
+      margin: 4.28vw 0 0 31.08vw;
+      .layer2 {
+        width: 36.86vw;
+        height: 1.72vw;
+        margin: 0.34vw 0 0 0.4vw;
+        .info6 {
+          width: 4.35vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .txt8 {
+          width: 4.35vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          margin-left: 1.83vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word14 {
+          width: 6vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          margin-left: 0.98vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info7 {
+          width: 4.35vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          margin-left: 1.03vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info8 {
+          width: 4.35vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          margin-left: 1.83vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .txt9 {
+          width: 6vw;
+          height: 1.72vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Medium;
+          line-height: 2.4vw;
+          text-align: right;
+          margin-left: 1.83vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .infoBox3 {
+      width: 37.72vw;
+      height: 11.26vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(51, 51, 51, 1);
+      font-size: 1.02vw;
+      font-family: SourceHanSansCN-Medium;
+      line-height: 1.2vw;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 1.88vw 0 0 31.08vw;
+    }
+    .mod9 {
+      width: 37.78vw;
+      height: 8.4vw;
+      overflow-wrap: break-word;
+      text-align: center;
+      font-size: 0;
+      margin: -0.51vw 0 0 31.02vw;
+      .word15 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .infoBox4 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(16, 203, 176, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .infoBox5 {
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        color: rgba(51, 51, 51, 1);
+        line-height: 1.2vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .mod10 {
+      height: 2.86vw;
+      background-color: rgba(0, 182, 156, 1);
+      width: 10.63vw;
+      margin: 2vw 0 0 44.51vw;
+      .info9 {
+        width: 6.46vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+        margin: 0.91vw 0 0 2.11vw;
+      }
+    }
+    .mod11 {
+      height: 29.43vw;
+      background-color: rgba(56, 64, 62, 1);
+      margin-top: 6.23vw;
+      width: 100vw;
+      .mod12 {
+        width: 72vw;
+        height: 22.35vw;
+        margin: 3.65vw 0 0 14.05vw;
+        .mod13 {
+          width: 43.43vw;
+          height: 1.2vw;
+          margin-left: 14.23vw;
+          .word16 {
+            width: 4.23vw;
+            height: 1.2vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: Times-Roman;
+            white-space: nowrap;
+            line-height: 1.03vw;
+          }
+          .word17 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .info10 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word18 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word19 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word20 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .txt10 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+        }
+        .mod14 {
+          width: 72vw;
+          height: 0.06vw;
+          background: url(./img/SketchPnga8144cc71288101f657a2b9545bd7d273df0ff60d5abd953d48b88c94bf85d49.png)
+            0vw 0vw no-repeat;
+          background-size: 72vw 0.11vw;
+          margin-top: 1.95vw;
+        }
+        .pic2 {
+          width: 5.95vw;
+          height: 5.03vw;
+          margin: 3.14vw 0 0 32.97vw;
+        }
+        .paragraph2 {
+          width: 44.29vw;
+          height: 10.06vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 1.26vw;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0.91vw 0 0 13.37vw;
+        }
+      }
+    }
+  }
+  .bd2 {
+    z-index: 89;
+    position: absolute;
+    left: 31.09vw;
+    top: 103.15vw;
+    width: 8.58vw;
+    height: 2.35vw;
+    border: 1px solid rgba(151, 151, 151, 1);
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .bd3 {
+    z-index: 90;
+    height: 2.35vw;
+    border: 1px solid rgba(151, 151, 151, 0.45);
+    background-color: rgba(255, 255, 255, 1);
+    width: 37.78vw;
+    position: absolute;
+    left: 31.09vw;
+    top: 103.15vw;
+    .bd4 {
+      width: 36.86vw;
+      height: 1.72vw;
+      margin: 0.34vw 0 0 0.4vw;
+      .word21 {
+        width: 4.35vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .info11 {
+        width: 4.35vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .txt11 {
+        width: 4.35vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word22 {
+        width: 4.35vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word23 {
+        width: 4.35vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .word24 {
+        width: 6vw;
+        height: 1.72vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 0.8vw;
+        font-family: SourceHanSansCN-Regular;
+        line-height: 2.4vw;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

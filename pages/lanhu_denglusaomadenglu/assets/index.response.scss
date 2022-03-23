@@ -1,0 +1,183 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 53.49vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .layer1 {
+    width: 79.43vw;
+    height: 53.49vw;
+    .block1 {
+      z-index: 3;
+      height: 53.49vw;
+      overflow: hidden;
+      background: url(./img/SketchPng5da4aac3292cd90a187bb91af0845a5d772159a9a1b69ec9b2eb42e83765aa29.png)
+        100% no-repeat;
+      width: 42.69vw;
+      position: relative;
+      .box1 {
+        z-index: 5;
+        position: relative;
+        width: 42.69vw;
+        height: 53.49vw;
+        overflow: hidden;
+        background: url(./img/SketchPng57360d43ad81763cc1581f65dbf9020e3d1cc47ad8805d15a495cac2c8aa49b4.png)
+          100% no-repeat;
+        .pic1 {
+          z-index: 6;
+          position: absolute;
+          left: 21.32vw;
+          top: 21.72vw;
+          width: 5.95vw;
+          height: 5.03vw;
+        }
+      }
+      .img1 {
+        z-index: 4;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 42.69vw;
+        height: 53.49vw;
+      }
+    }
+    .block2 {
+      width: 22.98vw;
+      height: 32.4vw;
+      margin-top: 7.38vw;
+      .layer2 {
+        width: 22.98vw;
+        height: 2.69vw;
+        overflow-wrap: break-word;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 0;
+        .txt1 {
+          font-size: 1.6vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 1.89vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word1 {
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 1.89vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .layer3 {
+        width: 22.92vw;
+        height: 1.2vw;
+        margin: 2.22vw 0 0 0.05vw;
+        .info1 {
+          width: 6.29vw;
+          height: 1.15vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 1.2vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.2vw;
+          text-align: right;
+          margin-top: 0.06vw;
+        }
+        .txt2 {
+          width: 5.2vw;
+          height: 1.15vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 1.2vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.2vw;
+          text-align: right;
+          margin-top: 0.06vw;
+        }
+        .word2 {
+          width: 5.2vw;
+          height: 1.2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 1.2vw;
+          font-family: SourceHanSansCN-Bold;
+          white-space: nowrap;
+          line-height: 1.2vw;
+          text-align: right;
+        }
+      }
+      .layer4 {
+        width: 4.58vw;
+        height: 0.23vw;
+        background-color: rgba(22, 219, 191, 1);
+        margin: 0.8vw 0 0 18.4vw;
+      }
+      .word3 {
+        width: 11.66vw;
+        height: 1.15vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(0, 182, 156, 1);
+        font-size: 1.2vw;
+        font-family: SourceHanSansCN-Regular;
+        white-space: nowrap;
+        line-height: 1.2vw;
+        text-align: right;
+        margin: 3.82vw 0 0 5.71vw;
+      }
+      .pic2 {
+        width: 13.72vw;
+        height: 13.72vw;
+        margin: 2.45vw 0 0 4.57vw;
+      }
+      .layer5 {
+        width: 19.72vw;
+        height: 1.83vw;
+        overflow-wrap: break-word;
+        text-align: right;
+        font-size: 0;
+        margin: 2.28vw 0 0 1.65vw;
+        .info2 {
+          font-size: 0.91vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 1.38vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info3 {
+          font-size: 0.91vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 182, 156, 1);
+          line-height: 1.38vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .word4 {
+          font-size: 0.91vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 1.38vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  .layer6 {
+    z-index: 17;
+    position: absolute;
+    left: 56.46vw;
+    top: 14.46vw;
+    width: 23.03vw;
+    height: 0.06vw;
+    background: url(./img/SketchPng6c817c70b4400e4dbd84f7e1584295b6494cc441ce0db8a7e91f7179d5a57ab0.png)
+      100% no-repeat;
+  }
+}

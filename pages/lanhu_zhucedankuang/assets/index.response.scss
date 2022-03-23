@@ -1,0 +1,402 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 53.49vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .main1 {
+    z-index: 3;
+    height: 53.49vw;
+    overflow: hidden;
+    background: url(./img/SketchPng40a2524ff8bdcf562ef5ecc9972c5797c15a84a93612af2f83b2f9855287817f.png)
+      100% no-repeat;
+    width: 100vw;
+    position: relative;
+    .bd1 {
+      z-index: 5;
+      position: relative;
+      width: 100vw;
+      height: 53.49vw;
+      overflow: hidden;
+      background: url(./img/SketchPngf5f5b215b91710966081ef2437e25d6670a5033d2b6a6bf4e6bc615fd981c77c.png)
+        100% no-repeat;
+      .bd2 {
+        z-index: 7;
+        position: absolute;
+        left: 34.23vw;
+        top: 5.72vw;
+        width: 31.55vw;
+        height: 43.95vw;
+        border: 1px solid rgba(242, 242, 242, 0.72);
+        box-shadow: 0px 2px 15px 0px rgba(60, 60, 60, 0.08);
+        overflow: hidden;
+        background: url(./img/SketchPngf258007083b3a5c71c381cac32bb61a802795bf4040bb6444ef65b8ecc44078d.png) -0.86vw -0.75vw
+          no-repeat;
+        background-size: 33.14vw 45.54vw;
+        .word1 {
+          z-index: 9;
+          position: absolute;
+          left: 12.63vw;
+          top: 1.32vw;
+          width: 6.29vw;
+          height: 2vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+        .icon1 {
+          z-index: 80;
+          position: absolute;
+          left: 28.23vw;
+          top: 1.55vw;
+          width: 1.49vw;
+          height: 1.49vw;
+        }
+        .box1 {
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          top: 4.46vw;
+          width: 31.32vw;
+          height: 0.12vw;
+          background: url(./img/SketchPng055f240760819a2f67a360edb5ce30e3980f90fe86d96b4662f538d284ed2201.png)
+            100% no-repeat;
+        }
+        .box2 {
+          z-index: 26;
+          height: 3.2vw;
+          border: 1px solid rgba(0, 182, 156, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 6.86vw;
+          padding: 0.68vw 0 0 0.51vw;
+          .outer1 {
+            width: 13.66vw;
+            height: 1.89vw;
+            .label1 {
+              width: 1.6vw;
+              height: 1.6vw;
+            }
+            .layer1 {
+              width: 0.06vw;
+              height: 1.66vw;
+              background: url(./img/SketchPng659fc0bd76b81987b1b33b6a6240841c3d7ed4cd0f360302bad7561927ecdaf3.png) -0.06vw -0.06vw
+                no-repeat;
+              background-size: 0.17vw 1.77vw;
+              margin-left: 0.86vw;
+            }
+            .txt1 {
+              width: 10.92vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin: 0.05vw 0 0 0.22vw;
+            }
+          }
+        }
+        .box3 {
+          z-index: 36;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 11.2vw;
+          padding: 0.68vw 0 0 0.51vw;
+          .group1 {
+            width: 21.43vw;
+            height: 1.83vw;
+            .icon2 {
+              width: 1.6vw;
+              height: 1.6vw;
+            }
+            .info1 {
+              width: 18.52vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .box4 {
+          z-index: 59;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 15.55vw;
+          padding: 0.34vw 0 0 0.51vw;
+          .outer2 {
+            width: 21.95vw;
+            height: 2.46vw;
+            .label2 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.4vw;
+            }
+            .word2 {
+              width: 10.92vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              margin-top: 0.29vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .mod1 {
+              z-index: 62;
+              height: 2.46vw;
+              background-color: rgba(114, 166, 159, 1);
+              width: 6.86vw;
+              position: relative;
+              .box5 {
+                z-index: 65;
+                height: 2.46vw;
+                background-color: rgba(0, 182, 156, 1);
+                width: 6.86vw;
+                position: static;
+                left: 54.23vw;
+                top: 21.66vw;
+                padding: 0.8vw 0 0 0.68vw;
+                .info2 {
+                  width: 5.43vw;
+                  height: 0.8vw;
+                  display: block;
+                  overflow-wrap: break-word;
+                  color: rgba(255, 255, 255, 1);
+                  font-size: 0.8vw;
+                  font-family: SourceHanSansCN-Regular;
+                  white-space: nowrap;
+                  line-height: 0.8vw;
+                  text-align: right;
+                }
+              }
+              .txt2 {
+                z-index: 63;
+                position: absolute;
+                left: 0.4vw;
+                top: 0.8vw;
+                width: 6.12vw;
+                height: 0.8vw;
+                display: block;
+                overflow-wrap: break-word;
+                color: rgba(255, 255, 255, 1);
+                font-size: 0.8vw;
+                font-family: SourceHanSansCN-Regular;
+                white-space: nowrap;
+                line-height: 0.8vw;
+                text-align: right;
+              }
+            }
+          }
+        }
+        .box6 {
+          z-index: 46;
+          height: 3.2vw;
+          border: 1px solid rgba(218, 218, 218, 1);
+          background-color: rgba(255, 255, 255, 1);
+          padding-left: 0.52vw;
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 19.89vw;
+          .outer3 {
+            width: 21.38vw;
+            height: 1.83vw;
+            .icon3 {
+              width: 1.6vw;
+              height: 1.6vw;
+              margin-top: 0.12vw;
+            }
+            .word3 {
+              width: 18.52vw;
+              height: 1.83vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(96, 96, 96, 0.25);
+              font-size: 0.91vw;
+              letter-spacing: -0.10000000149011612px;
+              font-family: SourceHanSansCN-Medium;
+              line-height: 1.38vw;
+              text-align: left;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .box7 {
+          z-index: 20;
+          height: 2.86vw;
+          background-color: rgba(7, 79, 123, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 28.18vw;
+          .mod2 {
+            z-index: 23;
+            height: 2.86vw;
+            background-color: rgba(0, 113, 182, 1);
+            padding-left: 6.46vw;
+            width: 22.86vw;
+            position: static;
+            left: 38.58vw;
+            top: 33.89vw;
+            .txt3 {
+              width: 9.89vw;
+              height: 1.03vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 1.02vw;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 1.03vw;
+              text-align: right;
+            }
+          }
+          .info3 {
+            z-index: 21;
+            position: absolute;
+            left: 6.58vw;
+            top: 0.92vw;
+            width: 9.72vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: right;
+          }
+        }
+        .box8 {
+          z-index: 13;
+          height: 2.86vw;
+          background-color: rgba(6, 122, 105, 1);
+          width: 22.86vw;
+          position: absolute;
+          left: 4.35vw;
+          top: 32.18vw;
+          .main2 {
+            z-index: 16;
+            height: 2.86vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 22.86vw;
+            position: static;
+            left: 38.58vw;
+            top: 37.89vw;
+            .info4 {
+              width: 11.09vw;
+              height: 1.03vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 1.02vw;
+              font-family: SourceHanSansCN-Medium;
+              white-space: nowrap;
+              line-height: 1.03vw;
+              text-align: right;
+            }
+          }
+          .txt4 {
+            z-index: 14;
+            position: absolute;
+            left: 6.35vw;
+            top: 0.92vw;
+            width: 10.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: right;
+          }
+        }
+        .box9 {
+          z-index: 78;
+          height: 0.8vw;
+          border: 1px solid rgba(199, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 0.8vw;
+          position: absolute;
+          left: 8.52vw;
+          top: 40.29vw;
+          .wrap1 {
+            width: 0.46vw;
+            height: 0.46vw;
+            background-color: rgba(0, 182, 156, 1);
+          }
+        }
+        .box10 {
+          position: absolute;
+          left: 9.95vw;
+          top: 39.83vw;
+          width: 13.03vw;
+          height: 1.83vw;
+          overflow-wrap: break-word;
+          text-align: left;
+          font-size: 0;
+          .word4 {
+            font-size: 0.8vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .info5 {
+            font-size: 0.8vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 182, 156, 1);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .img1 {
+      z-index: 4;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 53.49vw;
+    }
+  }
+}

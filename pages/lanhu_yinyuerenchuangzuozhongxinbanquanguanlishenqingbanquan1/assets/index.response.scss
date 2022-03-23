@@ -1,0 +1,886 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 98.98vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .layer1 {
+    width: 100vw;
+    height: 98.98vw;
+    .section1 {
+      height: 7.32vw;
+      background-color: rgba(0, 182, 156, 1);
+      padding-left: 5.78vw;
+      width: 100vw;
+      .group1 {
+        width: 87.49vw;
+        height: 5.03vw;
+        .pic1 {
+          width: 5.95vw;
+          height: 5.03vw;
+        }
+        .txt1 {
+          width: 13.26vw;
+          height: 2.69vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 2.05vw;
+          font-family: YouSheBiaoTiHei;
+          white-space: nowrap;
+          line-height: 2.69vw;
+          margin: 1.2vw 0 0 1.14vw;
+        }
+        .box1 {
+          height: 2.29vw;
+          border: 1px solid rgba(5, 134, 116, 1);
+          background-color: rgba(255, 255, 255, 1);
+          width: 19.2vw;
+          margin: 1.37vw 0 0 39.14vw;
+          padding: 0.68vw 0 0 0.51vw;
+          .txt2 {
+            width: 15.55vw;
+            height: 0.92vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(205, 205, 205, 1);
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 0.92vw;
+          }
+        }
+        .box2 {
+          width: 2.29vw;
+          height: 2.29vw;
+          border-radius: 50%;
+          background: url(./img/SketchPngdbf6ac907b178c6c1c6d7735676633c456a5b7bf3441050a171044228bc9813e.png)
+            100% no-repeat;
+          margin: 1.37vw 0 0 1.14vw;
+        }
+        .word1 {
+          width: 3.09vw;
+          height: 1.03vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.02vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.03vw;
+          margin: 2vw 0 0 0.57vw;
+        }
+        .label1 {
+          width: 1.15vw;
+          height: 1.15vw;
+          margin: 1.94vw 0 0 0.57vw;
+        }
+      }
+    }
+    .section2 {
+      height: 3.43vw;
+      background-color: rgba(250, 250, 250, 1);
+      margin-top: 0.06vw;
+      padding-left: 10vw;
+      width: 100vw;
+      .mod1 {
+        width: 15.43vw;
+        height: 0.8vw;
+        overflow-wrap: break-word;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 0;
+        .info1 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info2 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Bold;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .info3 {
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 0.8vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .section3 {
+      z-index: 27;
+      position: relative;
+      width: 80vw;
+      height: 10.29vw;
+      overflow: hidden;
+      background: url(./img/SketchPng7de5b767091e336af2fc2ab19bb87569caf4356fb31426b42f75c3501e48ba95.png)
+        100% no-repeat;
+      margin: 1.71vw 0 0 10vw;
+      .layer2 {
+        z-index: 31;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng7b6b32e83ee01ed5e7048362b388b6d27a1ae2835358426ce88b28e1d8666af7.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 16.98vw;
+        top: 2.75vw;
+        .word2 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+      }
+      .layer3 {
+        z-index: 43;
+        position: absolute;
+        left: 20.63vw;
+        top: 4vw;
+        width: 16.86vw;
+        height: 0.06vw;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.06vw
+          0vw no-repeat;
+        background-size: 16.8vw 0.11vw;
+      }
+      .layer4 {
+        z-index: 36;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 38.75vw;
+        top: 2.75vw;
+        .txt3 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+      }
+      .layer5 {
+        z-index: 44;
+        position: absolute;
+        left: 42.46vw;
+        top: 4vw;
+        width: 16.86vw;
+        height: 0.06vw;
+        background: url(./img/SketchPng088d0498ce747593a21fd056ad49d85e7299be5dbc78f46cc96c717f236b0671.png) -0.06vw
+          0vw no-repeat;
+        background-size: 16.8vw 0.11vw;
+      }
+      .layer6 {
+        z-index: 41;
+        height: 2.52vw;
+        border-radius: 50%;
+        background: url(./img/SketchPng6dbb558f3767bf616ce7a7f199ca0a2a5621d3f817d9a77b0bc9d66da40a2277.png)
+          100% no-repeat;
+        width: 2.52vw;
+        position: absolute;
+        left: 60.4vw;
+        top: 2.75vw;
+        .word3 {
+          width: 0.8vw;
+          height: 1.38vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.38vw;
+          text-align: right;
+        }
+      }
+      .word4 {
+        z-index: 29;
+        position: absolute;
+        left: 15.66vw;
+        top: 6.18vw;
+        width: 5.15vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 1);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+      .word5 {
+        z-index: 34;
+        position: absolute;
+        left: 36.92vw;
+        top: 6.18vw;
+        width: 6.18vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+      .word6 {
+        z-index: 39;
+        position: absolute;
+        left: 58.06vw;
+        top: 6.18vw;
+        width: 7.2vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(64, 63, 63, 0.65);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Bold;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+    }
+    .word7 {
+      width: 6.86vw;
+      height: 1.38vw;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(64, 63, 63, 1);
+      font-size: 1.37vw;
+      font-family: SourceHanSansCN-Medium;
+      white-space: nowrap;
+      line-height: 1.38vw;
+      text-align: right;
+      margin: 4.34vw 0 0 46.57vw;
+    }
+    .section4 {
+      width: 30.63vw;
+      height: 2.52vw;
+      margin: 2.28vw 0 0 34.74vw;
+      .section5 {
+        height: 2.52vw;
+        border: 1px solid rgba(222, 224, 231, 1);
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 0.75vw;
+        width: 22.63vw;
+        .mod2 {
+          width: 15.03vw;
+          height: 1.38vw;
+          .label2 {
+            width: 1.38vw;
+            height: 1.38vw;
+          }
+          .word8 {
+            width: 12.52vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: left;
+            margin-top: 0.18vw;
+          }
+        }
+      }
+      .section6 {
+        height: 2.52vw;
+        background-color: rgba(0, 182, 156, 1);
+        width: 6.86vw;
+        .txt4 {
+          width: 2.06vw;
+          height: 1.03vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.02vw;
+          font-family: SourceHanSansCN-Regular;
+          white-space: nowrap;
+          line-height: 1.03vw;
+          text-align: left;
+        }
+      }
+    }
+    .section7 {
+      z-index: 59;
+      height: 20.69vw;
+      border: 1px solid rgba(242, 242, 242, 0.72);
+      box-shadow: 0px 2px 15px 0px rgba(233, 233, 233, 0.59);
+      overflow: hidden;
+      background: url(./img/SketchPng47c66c4daeae288d33ac123a7341b1de72e7377acbc27ea14fea8baa47bb9651.png) -0.86vw -0.75vw
+        no-repeat;
+      background-size: 24.28vw 22.28vw;
+      margin-left: 34.69vw;
+      width: 22.69vw;
+      position: relative;
+      padding: 0.91vw 0 0 0.05vw;
+      .outer1 {
+        width: 21.6vw;
+        height: 19.72vw;
+        .wrap1 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin-left: 0.86vw;
+          .layer7 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .layer8 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .txt5 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .info4 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .layer9 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .txt6 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap2 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.75vw;
+        }
+        .wrap3 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin: 0.91vw 0 0 0.85vw;
+          .section8 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .section9 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .word9 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .info5 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .section10 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .word10 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap4 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.8vw;
+        }
+        .wrap5 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin: 0.85vw 0 0 0.85vw;
+          .outer2 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .outer3 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .word11 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .word12 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .outer4 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .txt7 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap6 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.75vw;
+        }
+        .wrap7 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin: 0.91vw 0 0 0.85vw;
+          .box3 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .box4 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .txt8 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .word13 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .box5 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .word14 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap8 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.8vw;
+        }
+        .wrap9 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin: 0.85vw 0 0 0.85vw;
+          .bd1 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .bd2 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .word15 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .word16 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .bd3 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .info6 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap10 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.75vw;
+        }
+        .wrap11 {
+          width: 20.75vw;
+          height: 1.72vw;
+          margin: 0.91vw 0 0 0.85vw;
+          .wrap12 {
+            width: 1.72vw;
+            height: 1.72vw;
+            border-radius: 50%;
+            background: url(./img/SketchPngc2209ec112dcabb43bfb28b5f7f1f9d5c4d6dce2090843b5ba8f218150b84d94.png)
+              100% no-repeat;
+          }
+          .wrap13 {
+            width: 4.8vw;
+            height: 0.8vw;
+            overflow-wrap: break-word;
+            text-align: left;
+            white-space: nowrap;
+            font-size: 0;
+            margin: 0.45vw 0 0 0.68vw;
+            .txt9 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 182, 156, 1);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .info7 {
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              color: rgba(0, 0, 0, 0.85);
+              line-height: 0.8vw;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+          .wrap14 {
+            height: 1.6vw;
+            background-color: rgba(0, 182, 156, 1);
+            width: 3.43vw;
+            margin: 0.05vw 0 0 10.11vw;
+            .info8 {
+              width: 1.6vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: left;
+            }
+          }
+        }
+        .wrap15 {
+          width: 21.6vw;
+          height: 0.06vw;
+          background: url(./img/SketchPngdd4e31726580071969a6b5a983d6c33bb4d17df9c4edc872b455771096f44598.png)
+            0vw -0.06vw no-repeat;
+          background-size: 21.6vw 0.11vw;
+          margin-top: 0.8vw;
+        }
+      }
+      .outer5 {
+        z-index: 60;
+        height: 20.58vw;
+        background-color: rgba(249, 249, 249, 1);
+        width: 0.35vw;
+        position: absolute;
+        left: 22.23vw;
+        top: 0;
+        .section11 {
+          width: 0.35vw;
+          height: 10.29vw;
+          background-color: rgba(223, 223, 223, 1);
+        }
+      }
+    }
+    .section12 {
+      height: 2.86vw;
+      background-color: rgba(1, 130, 112, 1);
+      width: 14.4vw;
+      margin: 4.17vw 0 0 42.8vw;
+      .info9 {
+        width: 11.09vw;
+        height: 1.03vw;
+        display: block;
+        overflow-wrap: break-word;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1.02vw;
+        font-family: SourceHanSansCN-Medium;
+        white-space: nowrap;
+        line-height: 1.03vw;
+        text-align: right;
+      }
+    }
+    .section13 {
+      height: 29.43vw;
+      background-color: rgba(56, 64, 62, 1);
+      margin-top: 8.58vw;
+      width: 100vw;
+      padding: 3.65vw 0 0 14.05vw;
+      .bd4 {
+        width: 72vw;
+        height: 22.35vw;
+        .box6 {
+          width: 43.43vw;
+          height: 1.2vw;
+          margin-left: 14.23vw;
+          .word17 {
+            width: 4.23vw;
+            height: 1.2vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: Times-Roman;
+            white-space: nowrap;
+            line-height: 1.03vw;
+          }
+          .txt10 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word18 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word19 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word20 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word21 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+          .word22 {
+            width: 4.12vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Regular;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            margin-top: 0.12vw;
+          }
+        }
+        .box7 {
+          width: 72vw;
+          height: 0.06vw;
+          background: url(./img/SketchPnga8144cc71288101f657a2b9545bd7d273df0ff60d5abd953d48b88c94bf85d49.png)
+            0vw 0vw no-repeat;
+          background-size: 72vw 0.11vw;
+          margin-top: 1.95vw;
+        }
+        .pic2 {
+          width: 5.95vw;
+          height: 5.03vw;
+          margin: 3.14vw 0 0 32.97vw;
+        }
+        .paragraph1 {
+          width: 44.29vw;
+          height: 10.06vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 0.8vw;
+          font-family: SourceHanSansCN-Regular;
+          line-height: 1.26vw;
+          text-align: right;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0.91vw 0 0 13.37vw;
+        }
+      }
+    }
+  }
+}

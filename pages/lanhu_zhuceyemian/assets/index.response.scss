@@ -1,0 +1,373 @@
+.page {
+  position: relative;
+  width: 100vw;
+  height: 53.49vw;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  .layer1 {
+    width: 80vw;
+    height: 53.49vw;
+    .group1 {
+      z-index: 3;
+      height: 53.49vw;
+      overflow: hidden;
+      background: url(./img/SketchPng5da4aac3292cd90a187bb91af0845a5d772159a9a1b69ec9b2eb42e83765aa29.png)
+        100% no-repeat;
+      width: 42.69vw;
+      position: relative;
+      .bd1 {
+        z-index: 5;
+        position: relative;
+        width: 42.69vw;
+        height: 53.49vw;
+        overflow: hidden;
+        background: url(./img/SketchPng57360d43ad81763cc1581f65dbf9020e3d1cc47ad8805d15a495cac2c8aa49b4.png)
+          100% no-repeat;
+        .img1 {
+          z-index: 6;
+          position: absolute;
+          left: 21.32vw;
+          top: 21.72vw;
+          width: 5.95vw;
+          height: 5.03vw;
+        }
+      }
+      .img2 {
+        z-index: 4;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 42.69vw;
+        height: 53.49vw;
+      }
+    }
+    .group2 {
+      width: 23.49vw;
+      height: 34.58vw;
+      margin-top: 9.49vw;
+      .main1 {
+        width: 22.92vw;
+        height: 4.69vw;
+        overflow-wrap: break-word;
+        text-align: left;
+        margin-left: 0.58vw;
+        font-size: 0;
+        .word1 {
+          font-size: 1.6vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 1.89vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .paragraph1 {
+          font-size: 1.37vw;
+          font-family: SourceHanSansCN-Regular;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 1.89vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .main2 {
+        height: 3.2vw;
+        border: 1px solid rgba(218, 218, 218, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 2.18vw;
+        width: 22.86vw;
+        padding: 0.68vw 0 0 0.74vw;
+        .mod1 {
+          width: 13.43vw;
+          height: 1.83vw;
+          .label1 {
+            width: 1.6vw;
+            height: 1.6vw;
+            margin-top: 0.18vw;
+          }
+          .txt1 {
+            width: 10.92vw;
+            height: 1.83vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(96, 96, 96, 0.25);
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Medium;
+            line-height: 1.38vw;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .main3 {
+        height: 3.2vw;
+        border: 1px solid rgba(218, 218, 218, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 0.8vw;
+        width: 22.86vw;
+        padding: 0.62vw 0 0 0.62vw;
+        .layer2 {
+          width: 21.32vw;
+          height: 1.89vw;
+          .icon1 {
+            width: 1.6vw;
+            height: 1.6vw;
+          }
+          .info1 {
+            width: 18.52vw;
+            height: 1.83vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(96, 96, 96, 0.25);
+            font-size: 0.91vw;
+            letter-spacing: -0.10000000149011612px;
+            font-family: SourceHanSansCN-Medium;
+            line-height: 1.38vw;
+            text-align: left;
+            margin-top: 0.06vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .main4 {
+        height: 3.2vw;
+        border: 1px solid rgba(218, 218, 218, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 0.8vw;
+        width: 22.86vw;
+        padding: 0.28vw 0 0 0.62vw;
+        .outer1 {
+          width: 21.83vw;
+          height: 2.46vw;
+          .icon2 {
+            width: 1.6vw;
+            height: 1.6vw;
+            margin-top: 0.35vw;
+          }
+          .txt2 {
+            width: 10.92vw;
+            height: 1.83vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(96, 96, 96, 0.25);
+            font-size: 0.91vw;
+            font-family: SourceHanSansCN-Medium;
+            line-height: 1.38vw;
+            text-align: left;
+            margin-top: 0.35vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .group3 {
+            z-index: 67;
+            height: 2.46vw;
+            background-color: rgba(114, 166, 159, 1);
+            width: 6.86vw;
+            position: relative;
+            .main5 {
+              z-index: 70;
+              height: 2.46vw;
+              background-color: rgba(0, 182, 156, 1);
+              width: 6.86vw;
+              position: static;
+              left: 72.18vw;
+              top: 24.69vw;
+              padding: 0.8vw 0 0 0.68vw;
+              .word2 {
+                width: 5.43vw;
+                height: 0.8vw;
+                display: block;
+                overflow-wrap: break-word;
+                color: rgba(255, 255, 255, 1);
+                font-size: 0.8vw;
+                font-family: SourceHanSansCN-Regular;
+                white-space: nowrap;
+                line-height: 0.8vw;
+                text-align: right;
+              }
+            }
+            .word3 {
+              z-index: 68;
+              position: absolute;
+              left: 0.4vw;
+              top: 0.8vw;
+              width: 6.12vw;
+              height: 0.8vw;
+              display: block;
+              overflow-wrap: break-word;
+              color: rgba(255, 255, 255, 1);
+              font-size: 0.8vw;
+              font-family: SourceHanSansCN-Regular;
+              white-space: nowrap;
+              line-height: 0.8vw;
+              text-align: right;
+            }
+          }
+        }
+      }
+      .main6 {
+        height: 3.2vw;
+        border: 1px solid rgba(218, 218, 218, 1);
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 0.8vw;
+        width: 22.86vw;
+        padding: 0.62vw 0 0 0.62vw;
+        .section1 {
+          width: 21.32vw;
+          height: 1.89vw;
+          .label2 {
+            width: 1.6vw;
+            height: 1.6vw;
+          }
+          .txt3 {
+            width: 18.52vw;
+            height: 1.83vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(96, 96, 96, 0.25);
+            font-size: 0.91vw;
+            letter-spacing: -0.10000000149011612px;
+            font-family: SourceHanSansCN-Medium;
+            line-height: 1.38vw;
+            text-align: left;
+            margin-top: 0.06vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .main7 {
+        z-index: 26;
+        height: 2.86vw;
+        background-color: rgba(7, 79, 123, 1);
+        margin-top: 1.72vw;
+        width: 22.86vw;
+        position: relative;
+        .main8 {
+          z-index: 29;
+          height: 2.86vw;
+          background-color: rgba(0, 113, 182, 1);
+          padding-left: 6.46vw;
+          width: 22.86vw;
+          position: static;
+          left: 56.52vw;
+          top: 33.26vw;
+          .txt4 {
+            width: 9.89vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: right;
+          }
+        }
+        .info2 {
+          z-index: 27;
+          position: absolute;
+          left: 6.58vw;
+          top: 0.92vw;
+          width: 9.72vw;
+          height: 1.03vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.02vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.03vw;
+          text-align: right;
+        }
+      }
+      .main9 {
+        z-index: 19;
+        height: 2.86vw;
+        background-color: rgba(6, 122, 105, 1);
+        margin-top: 0.92vw;
+        width: 22.86vw;
+        position: relative;
+        .group4 {
+          z-index: 22;
+          height: 2.86vw;
+          background-color: rgba(0, 182, 156, 1);
+          width: 22.86vw;
+          position: static;
+          left: 56.52vw;
+          top: 37.03vw;
+          .word4 {
+            width: 11.09vw;
+            height: 1.03vw;
+            display: block;
+            overflow-wrap: break-word;
+            color: rgba(255, 255, 255, 1);
+            font-size: 1.02vw;
+            font-family: SourceHanSansCN-Medium;
+            white-space: nowrap;
+            line-height: 1.03vw;
+            text-align: right;
+          }
+        }
+        .word5 {
+          z-index: 20;
+          position: absolute;
+          left: 6.35vw;
+          top: 0.92vw;
+          width: 10.12vw;
+          height: 1.03vw;
+          display: block;
+          overflow-wrap: break-word;
+          color: rgba(255, 255, 255, 1);
+          font-size: 1.02vw;
+          font-family: SourceHanSansCN-Medium;
+          white-space: nowrap;
+          line-height: 1.03vw;
+          text-align: right;
+        }
+      }
+      .main10 {
+        width: 14.46vw;
+        height: 1.83vw;
+        margin-top: 2.35vw;
+        .main11 {
+          height: 0.8vw;
+          border: 1px solid rgba(199, 199, 199, 1);
+          background-color: rgba(255, 255, 255, 1);
+          margin-top: 0.46vw;
+          width: 0.8vw;
+          .block1 {
+            width: 0.46vw;
+            height: 0.46vw;
+            background-color: rgba(0, 182, 156, 1);
+          }
+        }
+        .main12 {
+          width: 13.03vw;
+          height: 1.83vw;
+          overflow-wrap: break-word;
+          text-align: left;
+          font-size: 0;
+          .word6 {
+            font-size: 0.8vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .txt5 {
+            font-size: 0.8vw;
+            font-family: SourceHanSansCN-Regular;
+            color: rgba(0, 182, 156, 1);
+            line-height: 1.38vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
