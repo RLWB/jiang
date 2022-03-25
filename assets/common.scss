@@ -17,6 +17,7 @@ button {
 button:active {
   opacity: 0.6;
 }
+
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -28,12 +29,12 @@ button:active {
 .justify-start {
     display: flex;
     justify-content: flex-start;
-  }
+}
 .justify-center {
     display: flex;
     justify-content: center;
 }
-  
+
 .justify-end {
     display: flex;
     justify-content: flex-end;
@@ -62,4 +63,3 @@ button:active {
     display: flex;
     align-items: flex-end;
 }
-    

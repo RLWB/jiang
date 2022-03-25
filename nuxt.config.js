@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 11:56:00
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-24 14:42:28
+ * @LastEditTime: 2022-03-25 13:30:54
  * @Description:
  */
 export default {
@@ -28,9 +28,8 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+        // 'element-ui/lib/theme-chalk/index.css',
         '@/assets/style/index.scss',
-        'element-ui/lib/theme-chalk/index.css',
-        '@/assets/variable.scss'
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

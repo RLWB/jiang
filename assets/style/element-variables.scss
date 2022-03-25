@@ -1,0 +1,43 @@
+// // base color
+// $blue: #324157;
+// $light-blue: #3A71A8;
+// $red: #C03639;
+// $pink: #E65D6E;
+// $green: #30B08F;
+// $tiffany: #4AB7BD;
+// $yellow: #FEC171;
+// $panGreen: #30B08F;
+
+// // 默认菜单主题风格
+// $base-menu-color: #bfcbd9;
+// $base-menu-color-active: #f4f4f5;
+// $base-menu-background: #304156;
+// $base-logo-title-color: #ffffff;
+
+// $base-menu-light-color: rgba(0, 0, 0, 0.7);
+// $base-menu-light-background: #ffffff;
+// $base-logo-light-title-color: #001529;
+
+// $base-sub-menu-background: #1f2d3d;
+// $base-sub-menu-hover: #001528;
+
+/* 改变主题色变量 */
+$--color-primary: #00b69c;
+// $--color-success: #67C23A;
+// $--color-warning: #E6A23C;
+// $--color-danger: #F56C6C;
+// $--color-info: #909399;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+
+/* 组件样式按需引入 */
+// @import "~element-ui/packages/theme-chalk/src/select";
+// @import "~element-ui/packages/theme-chalk/src/option";
+// @import "~element-ui/packages/theme-chalk/src/input";
+// @import "~element-ui/packages/theme-chalk/src/button";
+// @import "~element-ui/packages/theme-chalk/src/notification";
+// @import "~element-ui/packages/theme-chalk/src/message";
+
+@import "~element-ui/packages/theme-chalk/src/index";
