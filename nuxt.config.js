@@ -2,13 +2,16 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 11:56:00
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-25 13:30:54
+ * @LastEditTime: 2022-03-27 21:09:41
  * @Description:
  */
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     // target: 'static',
-
+    server: {
+        port: 3009,
+        host: '127.0.0.1'
+    },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: 'nuxt-app',
