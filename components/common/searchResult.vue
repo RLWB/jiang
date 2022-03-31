@@ -1,3 +1,10 @@
+<!--
+ * @Author: Kuntey
+ * @Date: 2022-03-23 15:09:01
+ * @LastEditors: Kuntey
+ * @LastEditTime: 2022-03-26 12:15:50
+ * @Description:
+-->
 <template>
   <div class="search-result">
     <div v-for="(item, index) in list" :key="index" class="artic-item--border">

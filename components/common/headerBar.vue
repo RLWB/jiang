@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 18:05:12
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-24 11:48:34
+ * @LastEditTime: 2022-03-29 09:58:29
  * @Description:
 -->
 <template>
@@ -11,16 +11,24 @@
             <el-row class="align-center" style="width: 100%;">
                 <el-col :span="4" :offset="1">
                     <div class="logo-wrapper align-center justify-center">
-                        <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/logo2.png" />
+                        <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/logo2.png" />
                     </div>
                 </el-col>
 
                 <el-col :span="10" :offset="0">
                     <nav class="nav flex-row align-center justify-between">
-                        <div class="nav__item" @mouseenter="isShow = true" @mouseout="isShow = false">发现音乐</div>
-                        <div class="nav__item" >我的音乐</div>
-                        <div class="nav__item" >音乐人开放平台</div>
-                        <div class="nav__item" >关于我们</div>
+                        <div class="nav__item" @mouseenter="isShow = true">
+                            <nuxt-link to="/">发现音乐</nuxt-link>
+                        </div>
+                        <div class="nav__item" @mouseenter="isShow = false">
+                            <nuxt-link to="/musician">我的音乐</nuxt-link>
+                        </div>
+                        <div class="nav__item" @mouseenter="isShow = false">
+                            <nuxt-link to="/musicianOpenPlatform">音乐人开放平台</nuxt-link>
+                        </div>
+                        <div class="nav__item" @mouseenter="isShow = false">
+                            <nuxt-link to="/">关于我们</nuxt-link>
+                        </div>
                     </nav>
                 </el-col>
 
@@ -31,9 +39,9 @@
                 <el-col :span="3" :offset="0">
                     <div class="right-menu">
                         <div class="right-menu__item" style="font-size: 1.4rem;" v-if="true" >
-                            <nuxt-link class="a_custom" to="/login">登录</nuxt-link>
+                            <nuxt-link class="a_custom" to="/login" target="_blank" >登录</nuxt-link>
                             <span>/</span>
-                            <nuxt-link class="a_custom" to="/register">注册</nuxt-link>
+                            <nuxt-link class="a_custom" to="/register" target="_blank" >注册</nuxt-link>
                         </div>
                         <div class="avatar-container" v-else >
                             <el-dropdown @command="handleCommand" class="right-menu-item hover-effect" trigger="click">
@@ -42,8 +50,9 @@
                                     <img
                                         class="user-avatar"
                                         referrerpolicy="no-referrer"
-                                        src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngdbf6ac907b178c6c1c6d7735676633c456a5b7bf3441050a171044228bc9813e"
+                                        src="@/assets/images/default-avatar.png"
                                     />
+                                    <i class="el-icon-caret-bottom"></i>
                                     <el-icon><caret-bottom /></el-icon>
                                 </div>
                                 <template #dropdown>
@@ -72,7 +81,7 @@
             </el-row>
 
         </div>
-        <div class="nav__subItem align-center justify-center" v-show="isShow">
+        <div class="nav__subItem align-center justify-center" v-show="isShow" @mouseleave="isShow = false">
             <ul class="ul flex-row justify-between">
                 <li class="ul__li ">推荐</li>
                 <li class="ul__li ">音乐人</li>
@@ -121,9 +130,14 @@ export default {
     .nav {
         &__item {
             color: #FFFFFF;
-            font-size: 1.4rem;
-            padding: 53px 30px;
+            font-size: 1.5rem;
+            padding: 52px 25px;
             cursor: pointer;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+
+            }
             &:hover {
                 background: #0d7b6c;
             }

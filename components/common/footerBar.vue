@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 16:24:59
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-23 18:38:11
+ * @LastEditTime: 2022-03-29 09:58:06
  * @Description:
 -->
 <template>
@@ -19,7 +19,7 @@
             </div>
             <div class="whiteLine-wrapper"></div>
             <div class="logo-wrapper align-center justify-center">
-                <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/logo2.png" />
+                <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/logo2.png" />
             </div>
             <div class="bottom-wrapper flex-col align-center justify-center" >
                 <div>网络文化经营许可证京网文（2020）&nbsp;2496-386号</div>

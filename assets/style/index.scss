@@ -1,10 +1,17 @@
 @import './element-variables.scss' ;
 @import './element-ui.scss';
 
+@font-face {
+    font-family: "YouSheBiaoTiHei";
+    src: url('@/assets/font/YouSheBiaoTiHei.ttf');
+}
+
 :root {
     font-size: 12px;
+    // font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
+    //     Arial, PingFang SC-Light, Microsoft YaHei;
     font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
-        Arial, PingFang SC-Light, Microsoft YaHei;
+        Arial, PingFang SC-Light;
 }
 body {
     padding: 0;

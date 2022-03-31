@@ -1,7 +1,18 @@
+<!--
+ * @Author: Kuntey
+ * @Date: 2022-03-23 15:09:01
+ * @LastEditors: Kuntey
+ * @LastEditTime: 2022-03-28 16:05:36
+ * @Description:
+-->
 <template>
-  <div class="back-top" @click="backTop">
-    <i class="arrow"></i>
-  </div>
+    <div>
+        <!-- <div class="back-top" @click="backTop">
+            <i class="arrow"></i>
+        </div> -->
+        <el-backtop></el-backtop>
+    </div>
+
 </template>
 
 <script>

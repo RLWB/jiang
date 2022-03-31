@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-24 10:30:41
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-25 23:16:55
+ * @LastEditTime: 2022-03-29 09:55:08
  * @Description:
 -->
 <template>
@@ -10,13 +10,13 @@
         <div class="page-container__content flex-row justify-between">
             <section>
                 <div class="light-wrapper align-center justify-center">
-                    <img class="light-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/greenLight.png" />
+                    <img class="light-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/greenLight.png" />
                 </div>
                 <div class="logo-wrapper align-center justify-center">
-                    <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/logo2.png" />
+                    <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/logo2.png" />
                 </div>
                 <div class="bg-wrapper">
-                    <img class="bg-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/bg.png" />
+                    <img class="bg-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/bg.png" />
                 </div>
             </section>
             <section class="align-center justify-center">
@@ -25,14 +25,14 @@
                         <div class="title__text">欢迎回到音久音乐！</div>
                     </div>
 
-                    <el-tabs v-model="activeName" @tab-click="handleClick">
+                    <el-tabs v-model="activeName" @tab-click="handleClick" stretch >
                         <el-tab-pane label="验证码登录" name="1">
                             <el-form ref="form" :model="form" label-width="0px">
                                 <el-form-item >
                                     <div class="form-item-wrapper">
                                         <el-input v-model="form.phone" placeholder="请输入手机号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/phone.png" />
+                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/phone.png" />
                                             </div>
                                         </el-input>
                                     </div>
@@ -42,7 +42,7 @@
                                     <div class="form-item-wrapper flex-row align-center justify-between">
                                         <el-input v-model="form.phone" placeholder="请输入" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                                <img class="form-item-wrapper__img" slot="prefix" referrerpolicy="no-referrer" src="@/assets/images/common/verificationCode.png" />
+                                                <img class="form-item-wrapper__img" slot="prefix" referrerpolicy="no-referrer" src="@/assets/images/verificationCode.png" />
                                             </div>
                                             <div slot="suffix" class="align-center justify-center" style="height: 100%" >
                                                 <el-button type="primary" @click="onClick_1" v-if="true">获取验证码</el-button>
@@ -77,7 +77,7 @@
                                     <div class="form-item-wrapper flex-row align-center">
                                         <el-input v-model="form.phone" placeholder="请输入手机号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/phone.png" />
+                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/phone.png" />
                                             </div>
                                         </el-input>
                                     </div>
@@ -87,7 +87,7 @@
                                     <div class="form-item-wrapper flex-row align-center">
                                         <el-input v-model="form.phone" placeholder="请输入8-12位密码，须包含数字、英文和符号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/password.png" />
+                                                <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/password.png" />
                                             </div>
                                         </el-input>
                                     </div>
@@ -95,7 +95,7 @@
 
                                 <el-form-item >
                                     <div style="float: left;">
-                                        <el-link type="primary" :underline="false" href="/forgotPassword">
+                                        <el-link type="primary" :underline="false" href="/resetPassword" target="_blank" >
                                             忘记密码？
                                         </el-link>
                                     </div>
@@ -116,17 +116,20 @@
                             </el-form>
                         </el-tab-pane>
                         <el-tab-pane label="扫码登录" name="3">
-                            <div class="qrcode__login--tip align-center justify-center" style="">
-                                手机扫码，快捷登录
+                            <div style="width: 400px">
+                                <div class="qrcode__login--tip align-center justify-center" style="">
+                                    手机扫码，快捷登录
+                                </div>
+                                <div class="qrcode-wrapper align-center justify-center">
+                                    <img class="qrcode-wrapper__img" src="@/assets/images/qrcode.png" alt="" srcset="">
+                                </div>
+                                <div class="qrcode__bottom align-center justify-center">
+                                    <span>打开</span>
+                                    <span style="color: #00b69c;">手机端音久音乐</span>
+                                    <span>，扫一扫登录，扫一扫登录</span>
+                                </div>
                             </div>
-                            <div class="qrcode-wrapper align-center justify-center">
-                                <img class="qrcode-wrapper__img" src="@/assets/images/common/qrcode.png" alt="" srcset="">
-                            </div>
-                            <div class="align-center justify-center">
-                                <span>打开</span>
-                                <span style="color: #00b69c;">手机端音久音乐</span>
-                                <span>，扫一扫登录，扫一扫登录</span>
-                            </div>
+
                         </el-tab-pane>
                     </el-tabs>
 
@@ -136,14 +139,14 @@
                         </div>
                         <div class="text-wrapper">
                             <span>我已阅读并同意</span>
-                            <span>相关服务及隐私政策</span>
+                            <el-link type="primary" :underline="false" href="/privacy-policy" target="_blank" >相关服务及隐私政策</el-link>
                         </div>
                     </div>
 
                     <el-divider v-if="activeName != '3'">其他账号登录</el-divider>
 
                     <div class="wechat-wrapper align-center justify-center" v-show="activeName != '3'">
-                        <img class="wechat-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/wechat.png" alt="">
+                        <img class="wechat-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/wechat.png" alt="">
                     </div>
                 </div>
 
@@ -164,6 +167,7 @@ export default {
         onClick_1() {
             alert(1);
         },
+        handleClick() {},
         handleSubmit() {
             console.log('submit!');
         }
@@ -181,6 +185,11 @@ export default {
         width: 400px;
         height: 56px;
         padding: 0 152px 0 57px;
+    }
+}
+.el-divider {
+    .el-divider__text {
+        color: #00000040;
     }
 }
 .page-container {
@@ -233,11 +242,10 @@ export default {
             }
             .title {
                 text-align: left;
-                font-weight: bold;
-                margin: 0 0 38px 0;
+                margin: 0 0 18px 0;
                 &__text {
-                    font-size: 1.3rem;
-                    color: rgba(0, 0, 0, 0.85);
+                    font-size: 2rem;
+                    color: #000000d9;
                     line-height: 33px;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -281,6 +289,7 @@ export default {
                 margin-right: 10px;
             }
             .text-wrapper {
+                font-size: 1.17rem;
                 span {
                     &:nth-child(1) {
                         color: #00000073;
@@ -288,6 +297,9 @@ export default {
                     &:nth-child(2) {
                         color: #00b69c;
                     }
+                }
+                .el-link {
+                    vertical-align: unset;
                 }
             }
         }
@@ -312,6 +324,11 @@ export default {
                 width: 240px;
                 height: 240px;
             }
+        }
+
+        .qrcode__bottom {
+            font-size: 1.34rem;
+            color: #000000a6;
         }
     }
 }

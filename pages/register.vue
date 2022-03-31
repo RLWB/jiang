@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-24 10:30:20
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-25 22:39:48
+ * @LastEditTime: 2022-03-29 09:55:39
  * @Description:
 -->
 <template>
@@ -10,13 +10,13 @@
         <div class="page-container__content flex-row justify-between">
             <section>
                 <div class="light-wrapper align-center justify-center">
-                    <img class="light-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/greenLight.png" />
+                    <img class="light-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/greenLight.png" />
                 </div>
                 <div class="logo-wrapper align-center justify-center">
-                    <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/logo2.png" />
+                    <img class="logo-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/logo2.png" />
                 </div>
                 <div class="bg-wrapper">
-                    <img class="bg-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/bg.png" />
+                    <img class="bg-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/bg.png" />
                 </div>
             </section>
             <section class="align-center justify-center">
@@ -33,7 +33,7 @@
                             <div class="form-item-wrapper flex-row align-center">
                                 <el-input v-model="form.phone" placeholder="请输入手机号" >
                                     <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/phone.png" />
+                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/phone.png" />
                                     </div>
                                 </el-input>
                             </div>
@@ -43,7 +43,7 @@
                             <div class="form-item-wrapper flex-row align-center">
                                 <el-input v-model="form.phone" placeholder="请输入8-12位密码，须包含数字、英文和符号" >
                                     <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/password.png" />
+                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/password.png" />
                                     </div>
                                 </el-input>
                             </div>
@@ -53,7 +53,7 @@
                             <div class="form-item-wrapper flex-row align-center justify-between">
                                 <el-input v-model="form.phone" placeholder="请输入" >
                                     <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                        <img class="form-item-wrapper__img" slot="prefix" referrerpolicy="no-referrer" src="@/assets/images/common/verificationCode.png" />
+                                        <img class="form-item-wrapper__img" slot="prefix" referrerpolicy="no-referrer" src="@/assets/images/verificationCode.png" />
                                     </div>
                                     <div slot="suffix" class="align-center justify-center" style="height: 100%" >
                                         <el-button type="primary" @click="onClick_1" v-if="true">获取验证码</el-button>
@@ -67,7 +67,7 @@
                             <div class="form-item-wrapper flex-row align-center">
                                 <el-input v-model="form.phone" placeholder="请输入邀请码，此项为选填项" >
                                     <div slot="prefix" class="align-center justify-center" style="height: 100%">
-                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/common/invitationCode.png" />
+                                        <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/invitationCode.png" />
                                     </div>
                                 </el-input>
                             </div>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="text-wrapper">
                             <span>我已阅读并同意</span>
-                            <span>相关服务及隐私政策</span>
+                            <el-link type="primary" :underline="false" href="/privacy-policy" target="_blank" >相关服务及隐私政策</el-link>
                         </div>
                     </div>
                 </div>
@@ -178,11 +178,10 @@ export default {
             }
             .title {
                 text-align: left;
-                font-weight: bold;
                 margin: 0 0 38px 10px;
                 &__text {
-                    font-size: 1.3rem;
-                    color: rgba(0, 0, 0, 0.85);
+                    font-size: 2rem;
+                    color: #000000d9;
                     line-height: 33px;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -207,7 +206,7 @@ export default {
             }
 
             .button__register{
-                margin: 16px 0 6px 0;
+                margin: 16px 0 16px 0;
                 background:  #0071B6;
                 color: #FFF;
             }
@@ -226,6 +225,7 @@ export default {
                 margin-right: 10px;
             }
             .text-wrapper {
+                font-size: 1.17rem;
                 span {
                     &:nth-child(1) {
                         color: #00000073;
@@ -233,6 +233,9 @@ export default {
                     &:nth-child(2) {
                         color: #00b69c;
                     }
+                }
+                .el-link {
+                    vertical-align: unset;
                 }
             }
         }
