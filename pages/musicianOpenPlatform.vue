@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-26 11:56:23
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-31 23:43:13
+ * @LastEditTime: 2022-04-01 21:50:54
  * @Description:
 -->
 <template>
@@ -10,8 +10,8 @@
 
         <div class="page-top flex-col">
             <div class="button__group flex-row justify-between">
-                <el-button type="primary" @click="">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
-                <el-button type="primary" @click="">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
             <div class="banner-wrapper">
                 <img
@@ -20,6 +20,7 @@
                     src="@/assets/images/musicianOpenPlatform/banner.png"
                 />
             </div>
+            <div>111</div>
         </div>
 
         <div class="page-main flex-col align-center">
@@ -49,118 +50,33 @@
             </div>
 
             <div class="corporate-musician-wrapper flex-row justify-between">
-                <div class="corporate-musician-wrapper__item flex-col">
-                    <img class="pic1" referrerpolicy="no-referrer" src="@/assets/images/musicianOpenPlatform/musician_icon1.png" />
-                    <span class="txt3">注册/登录</span>
-                    <span class="txt4">注册/登录音久音乐平台，支持手机号或第三方登录注册。</span>
-                    <span class="word6">1</span>
-                </div>
-                <div class="block8 flex-col">
-                    <img
-                        class="pic2"
-                        referrerpolicy="no-referrer"
-                        src="@/assets/images/musicianOpenPlatform/musician_icon2.png"
-                    />
-                    <span class="info3">认证企业信息</span>
-                    <span class="word7">
-                        确保上传的营业执照法人、法人姓名、身份证号一致，且真实。若认证失败将无法进入下一步。
-                    </span>
-                    <span class="info4">2</span>
-                </div>
-                <div class="block9 flex-col">
-                    <img
-                        class="img3"
-                        referrerpolicy="no-referrer"
-                        src="@/assets/images/musicianOpenPlatform/musician_icon3.png"
-                    />
-                    <span class="word8">填写并提交企业信息</span>
-                    <span class="word9">
-                        按照表单要求准确填写企业信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；
-                    </span>
-                    <span class="info5">3</span>
-                </div>
-                <div class="block10 flex-col">
-                    <img
-                        class="img4"
-                        referrerpolicy="no-referrer"
-                        src="@/assets/images/musicianOpenPlatform/musician_icon7.png"
-                    />
-                    <span class="word10">缴纳年费</span>
-                    <span class="word11">
-                        上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。
-                    </span>
-                    <span class="word12">4</span>
+                <div class="corporate-item flex-col align-center" v-for="(item, index) in corporateItems" :key="index">
+                    <img class="corporate-item__icon" referrerpolicy="no-referrer" :src="'_nuxt/assets/images/musicianOpenPlatform/' + item.icon" />
+                    <div class="corporate-item__title">{{ item.title }}</div>
+                    <div class="corporate-item__content">
+                        {{ item.content }}
+                    </div>
+                        <div class="corporate-item__no">{{ item.no }}</div>
                 </div>
             </div>
             <div class="main__button-wrapper align-center justify-center">
-                <el-button type="primary" @click="">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
             <div class="subTitle-wrapper flex-row align-center justify-center">
                 <img class="subTitle-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/musicianOpenPlatform/applyForAnIndividualMusicianTitle.png" />
             </div>
-            <div class="block13 flex-row justify-between">
-                <div class="bd1 flex-col">
-
-                <img
-                    class="pic3"
-                    referrerpolicy="no-referrer"
-                    src="@/assets/images/musicianOpenPlatform/musician_icon1.png"
-                />
-                <span class="word13">注册/登录</span>
-                <span class="word14">注册/登录音久音乐平台，支持手机号或第三方登录注册。</span>
-                <span class="txt5">1</span>
-                </div>
-                <div class="bd2 flex-col">
-                <img
-                    class="img5"
-                    referrerpolicy="no-referrer"
-                    src="@/assets/images/musicianOpenPlatform/musician_icon2.png"
-                />
-                <span class="info7">认证个人信息</span>
-                <span class="word15">
-                    确保填写的姓名与身份证号，以及上传的证件照片一致且真实。若认证失败将无法进入下个流程。
-                </span>
-                <span class="txt6">2</span>
-                </div>
-                <div class="bd3 flex-col">
-                <img
-                    class="pic4"
-                    referrerpolicy="no-referrer"
-                    src="@/assets/images/musicianOpenPlatform/musician_icon3.png"
-                />
-                <span class="info8">填写并提交个人信息</span>
-                <span class="word16">
-                    按照表单要求准确填写个人信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；
-                </span>
-                <span class="word17">3</span>
-                </div>
-                <div class="bd4 flex-col">
-                <img
-                    class="pic5"
-                    referrerpolicy="no-referrer"
-                    src="@/assets/images/musicianOpenPlatform/musician_icon6.png"
-                />
-                <span class="info9">上传音乐作品</span>
-                <span class="word18">
-                    审核通过后，必须在app或者网站上上传至少一个音乐作品。音乐作品提交审核后，请耐心等待。审核结果会以短信和系统消息的形式发出；
-                </span>
-                <span class="txt7">4</span>
-                </div>
-                <div class="bd5 flex-col">
-                <img
-                    class="img6"
-                    referrerpolicy="no-referrer"
-                    src="@/assets/images/musicianOpenPlatform/musician_icon7.png"
-                />
-                <span class="txt8">缴纳年费</span>
-                <span class="word19">
-                    上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。
-                </span>
-                <span class="info10">5</span>
+            <div class="individualMusician-wrapper flex-row justify-between">
+                <div class="individualMusician-item flex-col align-center" v-for="(item, index) in individualMusicianItems" :key="index">
+                    <img class="individualMusician-item__icon" referrerpolicy="no-referrer" :src="'_nuxt/assets/images/musicianOpenPlatform/' + item.icon" />
+                    <div class="individualMusician-item__title">{{ item.title }}</div>
+                    <div class="individualMusician-item__content">
+                        {{ item.content }}
+                    </div>
+                        <span class="individualMusician-item__no">{{ item.no }}</span>
                 </div>
             </div>
             <div class="main__button-wrapper align-center justify-center">
-                <el-button type="primary" @click="">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
         </div>
     </div>
@@ -219,10 +135,78 @@ export default {
           lanhutext1: '为歌曲量身定制多维推广服务'
         }
       ],
-      constants: {}
+      constants: {},
+      corporateItems: [
+          {
+              icon: "musician_icon1.png",
+              title: "注册/登录",
+              content: "注册/登录音久音乐平台，支持手机号或第三方登录注册。",
+              no: "1"
+          },
+          {
+              icon: "musician_icon2.png",
+              title: "认证企业信息",
+              content: "确保上传的营业执照法人、法人姓名、身份证号一致，且真实。若认证失败将无法进入下一步。",
+              no: "2"
+          },
+          {
+              icon: "musician_icon3.png",
+              title: "填写并提交企业信息",
+              content: "按照表单要求准确填写企业信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；",
+              no: "3"
+          },
+          {
+              icon: "musician_icon7.png",
+              title: "缴纳年费",
+              content: "上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。",
+              no: "4"
+          }
+      ],
+      individualMusicianItems: [
+          {
+              icon: "musician_icon1.png",
+              title: "注册/登录",
+              content: "注册/登录音久音乐平台，支持手机号或第三方登录注册。",
+              no: "1"
+          },
+          {
+              icon: "musician_icon2.png",
+              title: "认证个人信息",
+              content: "确保填写的姓名与身份证号，以及上传的证件照片一致且真实。若认证失败将无法进入下个流程。",
+              no: "2"
+          },
+          {
+              icon: "musician_icon3.png",
+              title: "填写并提交个人信息",
+              content: "按照表单要求准确填写个人信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；",
+              no: "3"
+          },
+          {
+              icon: "musician_icon6.png",
+              title: "上传音乐作品",
+              content: "审核通过后，必须在app或者网站上上传至少一个音乐作品。音乐作品提交审核后，请耐心等待。审核结果会以短信和系统消息的形式发出；",
+              no: "4"
+          },
+          {
+              icon: "musician_icon7.png",
+              title: "缴纳年费",
+              content: "上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。",
+              no: "5"
+          },
+
+      ]
     };
   },
-  methods: {}
+  methods: {
+      // 申请音乐人
+      toApplyMusician(type) {
+          if (type === "corporate") {
+              this.$router.push("/applyForACorporateMusician/certifiedEnterpriseInformation")
+          } else {
+              this.$router.push("/applyForAnIndividualMusician/certifiedEnterpriseInformation")
+          }
+      }
+  }
 };
 </script>
 <style lang="scss" scoped >
@@ -322,328 +306,81 @@ export default {
             }
         }
 
+        .corporate-item, .individualMusician-item {
+            height: 436px;
+            position: relative;
+            overflow: hidden;
+            background: url(@/assets/images/musicianOpenPlatform/SketchPng16f6cdfb246a21939f22c3ad07eb711fe5b42f23a9c9afbc15da8070464e1910.png)
+            100% no-repeat;
+            &__icon {
+                margin-top: 68px;
+                width: 5.72vw;
+                height: 5.72vw;
+                // width: 100px;
+                // height: 100px;
+            }
+            &__title {
+                margin-top: 31px;
+                height: 1.38vw;
+                overflow-wrap: break-word;
+                color: rgba(64, 63, 63, 1);
+                font-size: 1.37vw;
+                white-space: nowrap;
+                line-height: 1.38vw;
+                text-align: right;
+            }
+            &__content {
+                margin-top: 10px;
+                width: 15.55vw;
+                overflow-wrap: break-word;
+                color: rgba(0, 0, 0, 0.52);
+                font-size: 1.02vw;
+                letter-spacing: -0.20000000298023224px;
+                line-height: 1.55vw;
+                text-align: left;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__no {
+                position: absolute;
+                right: 7px;
+                bottom: 0;
+                overflow-wrap: break-word;
+                color: rgba(36, 204, 180, 0.23);
+                font-size: 5.71vw;
+                font-family: YouSheBiaoTiHei;
+                white-space: nowrap;
+                line-height: 5.72vw;
+                text-align: right;
+            }
+        }
+
         .corporate-musician-wrapper {
             width: 100%;
             margin-top: 48px;
-            &__item {
-                position: relative;
+            .corporate-item {
                 width: 18.29vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng16f6cdfb246a21939f22c3ad07eb711fe5b42f23a9c9afbc15da8070464e1910.png)
-                100% no-repeat;
-                .pic1 {
-                    z-index: 324;
-                    position: absolute;
-                    left: 6.29vw;
-                    top: 3.89vw;
-                    width: 5.72vw;
-                    height: 5.72vw;
-                }
-                .txt3 {
-                    z-index: 321;
-                    position: absolute;
-                    left: 6.12vw;
-                    top: 11.38vw;
-                    width: 6.06vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    font-family: SourceHanSansCN-Bold;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .txt4 {
-                    z-index: 322;
-                    position: absolute;
-                    left: 1.38vw;
-                    top: 13.32vw;
+                // height: 24.92vw;
+                &__content {
                     width: 15.55vw;
                     height: 6vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
-                    letter-spacing: -0.20000000298023224px;
-
-                    line-height: 1.55vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .word6 {
-                    z-index: 323;
-                    position: absolute;
-                    left: 13.6vw;
-                    top: 20.63vw;
-                    width: 4.58vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(36, 204, 180, 0.23);
-                    font-size: 5.71vw;
-                    font-family: YouSheBiaoTiHei;
-                    white-space: nowrap;
-                    line-height: 5.72vw;
-                    text-align: right;
                 }
             }
-        .block8 {
-            z-index: 335;
-            position: relative;
-            width: 18.29vw;
-            height: 24.92vw;
-            overflow: hidden;
-            background: url(@/assets/images/musicianOpenPlatform/SketchPng16f6cdfb246a21939f22c3ad07eb711fe5b42f23a9c9afbc15da8070464e1910.png)
-            100% no-repeat;
-            .pic2 {
-            z-index: 339;
-            position: absolute;
-            left: 6.29vw;
-            top: 3.89vw;
-            width: 5.72vw;
-            height: 5.72vw;
-            }
-            .info3 {
-            z-index: 336;
-            position: absolute;
-            left: 5.03vw;
-            top: 11.38vw;
-            width: 8.23vw;
-            height: 1.38vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(64, 63, 63, 1);
-            font-size: 1.37vw;
-            font-family: SourceHanSansCN-Bold;
-            white-space: nowrap;
-            line-height: 1.38vw;
-            text-align: right;
-            }
-            .word7 {
-            z-index: 337;
-            position: absolute;
-            left: 1.38vw;
-            top: 13.32vw;
-            width: 15.55vw;
-            height: 6vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(0, 0, 0, 0.52);
-            font-size: 1.02vw;
-            letter-spacing: -0.20000000298023224px;
 
-            line-height: 1.55vw;
-            text-align: left;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            }
-            .info4 {
-            z-index: 338;
-            position: absolute;
-            left: 13.6vw;
-            top: 20.63vw;
-            width: 4.58vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(36, 204, 180, 0.23);
-            font-size: 5.71vw;
-            font-family: YouSheBiaoTiHei;
-            white-space: nowrap;
-            line-height: 5.72vw;
-            text-align: right;
-            }
-        }
-        .block9 {
-            z-index: 348;
-            position: relative;
-            width: 18.29vw;
-            height: 24.92vw;
-            overflow: hidden;
-            background: url(@/assets/images/musicianOpenPlatform/SketchPng16f6cdfb246a21939f22c3ad07eb711fe5b42f23a9c9afbc15da8070464e1910.png)
-            100% no-repeat;
-            .img3 {
-            z-index: 352;
-            position: absolute;
-            left: 6.29vw;
-            top: 3.89vw;
-            width: 5.72vw;
-            height: 5.72vw;
-            }
-            .word8 {
-            z-index: 349;
-            position: absolute;
-            left: 2.98vw;
-            top: 11.38vw;
-            width: 12.35vw;
-            height: 1.38vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(64, 63, 63, 1);
-            font-size: 1.37vw;
-            font-family: SourceHanSansCN-Bold;
-            white-space: nowrap;
-            line-height: 1.38vw;
-            text-align: right;
-            }
-            .word9 {
-            z-index: 350;
-            position: absolute;
-            left: 1.38vw;
-            top: 13.32vw;
-            width: 15.55vw;
-            height: 8.18vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(0, 0, 0, 0.52);
-            font-size: 1.02vw;
-            letter-spacing: -0.20000000298023224px;
-
-            line-height: 1.6vw;
-            text-align: left;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            }
-            .info5 {
-            z-index: 351;
-            position: absolute;
-            left: 13.6vw;
-            top: 20.63vw;
-            width: 4.58vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(36, 204, 180, 0.23);
-            font-size: 5.71vw;
-            font-family: YouSheBiaoTiHei;
-            white-space: nowrap;
-            line-height: 5.72vw;
-            text-align: right;
-            }
-        }
-        .block10 {
-            z-index: 365;
-            position: relative;
-            width: 18.29vw;
-            height: 24.92vw;
-            overflow: hidden;
-            background: url(@/assets/images/musicianOpenPlatform/SketchPng16f6cdfb246a21939f22c3ad07eb711fe5b42f23a9c9afbc15da8070464e1910.png)
-            100% no-repeat;
-            .img4 {
-            z-index: 369;
-            position: absolute;
-            left: 6.29vw;
-            top: 3.89vw;
-            width: 5.72vw;
-            height: 5.72vw;
-            }
-            .word10 {
-            z-index: 366;
-            position: absolute;
-            left: 6.4vw;
-            top: 11.38vw;
-            width: 5.49vw;
-            height: 1.38vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(64, 63, 63, 1);
-            font-size: 1.37vw;
-            font-family: SourceHanSansCN-Bold;
-            white-space: nowrap;
-            line-height: 1.38vw;
-            text-align: right;
-            }
-            .word11 {
-            z-index: 367;
-            position: absolute;
-            left: 1.38vw;
-            top: 13.32vw;
-            width: 15.55vw;
-            height: 8.18vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(0, 0, 0, 0.52);
-            font-size: 1.02vw;
-            letter-spacing: -0.20000000298023224px;
-
-            line-height: 1.55vw;
-            text-align: left;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            }
-            .word12 {
-            z-index: 368;
-            position: absolute;
-            left: 13.6vw;
-            top: 20.63vw;
-            width: 4.58vw;
-            display: block;
-            overflow-wrap: break-word;
-            color: rgba(36, 204, 180, 0.23);
-            font-size: 5.71vw;
-            font-family: YouSheBiaoTiHei;
-            white-space: nowrap;
-            line-height: 5.72vw;
-            text-align: right;
-            }
-        }
         }
 
-        .block13 {
+        .individualMusician-wrapper {
             width: 80vw;
-            height: 24.92vw;
             margin-top: 42px;
-            .bd1 {
-                position: relative;
+            .individualMusician-item {
                 width: 14.86vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng3f5a211bf7714a60677bc2f1c993e46f5ee90fad9e9f821425f9042c0d1155e6.png)
-                100% no-repeat;
-                .pic3 {
-                position: absolute;
-                left: 4.58vw;
-                top: 2.75vw;
-                width: 5.72vw;
-                height: 5.72vw;
+                &__icon {
+                    margin-top: 48px;
                 }
-                .word13 {
-                    position: absolute;
-                    left: 4.4vw;
-                    top: 10.52vw;
-                    width: 6.06vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .word14 {
-                    position: absolute;
-                    left: 1.15vw;
-                    top: 12.46vw;
+                &__content {
                     width: 12.58vw;
-                    height: 6vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
-
-                    line-height: 1.49vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
                 }
-                .txt5 {
-                    position: absolute;
-                    left: 9.95vw;
-                    top: 20.92vw;
-                    width: 4.58vw;
-                    display: block;
+                &__no {
                     overflow-wrap: break-word;
                     color: rgba(36, 204, 180, 0.23);
                     font-size: 5.71vw;
@@ -652,242 +389,7 @@ export default {
                     line-height: 5.72vw;
                     text-align: right;
                 }
-            }
-            .bd2 {
-                position: relative;
-                width: 14.86vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng3f5a211bf7714a60677bc2f1c993e46f5ee90fad9e9f821425f9042c0d1155e6.png)
-                100% no-repeat;
-                .img5 {
-                    position: absolute;
-                    left: 4.58vw;
-                    top: 2.75vw;
-                    width: 5.72vw;
-                    height: 5.72vw;
-                }
-                .info7 {
-                    position: absolute;
-                    left: 3.32vw;
-                    top: 10.52vw;
-                    width: 8.23vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .word15 {
-                    position: absolute;
-                    left: 1.15vw;
-                    top: 12.46vw;
-                    width: 12.58vw;
-                    height: 7.32vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
 
-                    line-height: 1.49vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .txt6 {
-                    position: absolute;
-                    left: 10.29vw;
-                    top: 20.92vw;
-                    width: 4.58vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(36, 204, 180, 0.23);
-                    font-size: 5.71vw;
-                    font-family: YouSheBiaoTiHei;
-                    white-space: nowrap;
-                    line-height: 5.72vw;
-                    text-align: right;
-                }
-            }
-            .bd3 {
-                position: relative;
-                width: 14.86vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng3f5a211bf7714a60677bc2f1c993e46f5ee90fad9e9f821425f9042c0d1155e6.png)
-                100% no-repeat;
-                .pic4 {
-                    position: absolute;
-                    left: 4.58vw;
-                    top: 2.75vw;
-                    width: 5.72vw;
-                    height: 5.72vw;
-                }
-                .info8 {
-                    position: absolute;
-                    left: 1.26vw;
-                    top: 10.52vw;
-                    width: 12.35vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .word16 {
-                    position: absolute;
-                    left: 1.15vw;
-                    top: 12.46vw;
-                    width: 12.58vw;
-                    height: 8.18vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
-
-                    line-height: 1.55vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .word17 {
-                    position: absolute;
-                    left: 10.29vw;
-                    top: 20.92vw;
-                    width: 4.58vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(36, 204, 180, 0.23);
-                    font-size: 5.71vw;
-                    font-family: YouSheBiaoTiHei;
-                    white-space: nowrap;
-                    line-height: 5.72vw;
-                    text-align: right;
-                }
-            }
-            .bd4 {
-                position: relative;
-                width: 14.86vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng3f5a211bf7714a60677bc2f1c993e46f5ee90fad9e9f821425f9042c0d1155e6.png)
-                100% no-repeat;
-                .pic5 {
-                    position: absolute;
-                    left: 4.58vw;
-                    top: 2.75vw;
-                    width: 5.72vw;
-                    height: 5.72vw;
-                }
-                .info9 {
-                    position: absolute;
-                    left: 3.32vw;
-                    top: 10.52vw;
-                    width: 8.23vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .word18 {
-                    position: absolute;
-                    left: 1.15vw;
-                    top: 12.46vw;
-                    width: 12.58vw;
-                    height: 10.06vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
-
-                    line-height: 1.49vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .txt7 {
-                    position: absolute;
-                    left: 10.29vw;
-                    top: 20.92vw;
-                    width: 4.63vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(36, 204, 180, 0.23);
-                    font-size: 5.71vw;
-                    font-family: YouSheBiaoTiHei;
-                    white-space: nowrap;
-                    line-height: 5.72vw;
-                    text-align: right;
-                }
-            }
-            .bd5 {
-                position: relative;
-                width: 14.86vw;
-                height: 24.92vw;
-                overflow: hidden;
-                background: url(@/assets/images/musicianOpenPlatform/SketchPng3f5a211bf7714a60677bc2f1c993e46f5ee90fad9e9f821425f9042c0d1155e6.png)
-                100% no-repeat;
-                .img6 {
-                    position: absolute;
-                    left: 4.58vw;
-                    top: 2.75vw;
-                    width: 5.72vw;
-                    height: 5.72vw;
-                }
-                .txt8 {
-                    position: absolute;
-                    left: 4.69vw;
-                    top: 10.52vw;
-                    width: 5.49vw;
-                    height: 1.38vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(64, 63, 63, 1);
-                    font-size: 1.37vw;
-                    white-space: nowrap;
-                    line-height: 1.38vw;
-                    text-align: right;
-                }
-                .word19 {
-                    position: absolute;
-                    left: 1.15vw;
-                    top: 12.46vw;
-                    width: 12.58vw;
-                    height: 8.18vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(0, 0, 0, 0.52);
-                    font-size: 1.02vw;
-
-                    line-height: 1.49vw;
-                    text-align: left;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .info10 {
-                    position: absolute;
-                    left: 10.29vw;
-                    top: 20.92vw;
-                    width: 4.58vw;
-                    display: block;
-                    overflow-wrap: break-word;
-                    color: rgba(36, 204, 180, 0.23);
-                    font-size: 5.71vw;
-                    font-family: YouSheBiaoTiHei;
-                    white-space: nowrap;
-                    line-height: 5.72vw;
-                    text-align: right;
-                }
             }
         }
         .main__button-wrapper {

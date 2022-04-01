@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 18:05:12
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-29 09:58:29
+ * @LastEditTime: 2022-04-01 16:44:30
  * @Description:
 -->
 <template>
@@ -17,18 +17,26 @@
 
                 <el-col :span="10" :offset="0">
                     <nav class="nav flex-row align-center justify-between">
-                        <div class="nav__item" @mouseenter="isShow = true">
-                            <nuxt-link to="/">发现音乐</nuxt-link>
-                        </div>
-                        <div class="nav__item" @mouseenter="isShow = false">
-                            <nuxt-link to="/musician">我的音乐</nuxt-link>
-                        </div>
-                        <div class="nav__item" @mouseenter="isShow = false">
-                            <nuxt-link to="/musicianOpenPlatform">音乐人开放平台</nuxt-link>
-                        </div>
-                        <div class="nav__item" @mouseenter="isShow = false">
-                            <nuxt-link to="/">关于我们</nuxt-link>
-                        </div>
+                        <nuxt-link to="/">
+                            <div class="nav__item" @mouseenter="isShow = true">
+                                发现音乐
+                            </div>
+                        </nuxt-link>
+                        <nuxt-link to="/musician">
+                            <div class="nav__item" @mouseenter="isShow = false">
+                                我的音乐
+                            </div>
+                        </nuxt-link>
+                        <nuxt-link to="/musicianOpenPlatform">
+                            <div class="nav__item" @mouseenter="isShow = false">
+                                音乐人开放平台
+                            </div>
+                        </nuxt-link>
+                        <nuxt-link to="/">
+                            <div class="nav__item" @mouseenter="isShow = false">
+                                关于我们
+                            </div>
+                        </nuxt-link>
                     </nav>
                 </el-col>
 
@@ -133,14 +141,14 @@ export default {
             font-size: 1.5rem;
             padding: 52px 25px;
             cursor: pointer;
-            a {
-                color: #FFFFFF;
-                text-decoration: none;
-
-            }
             &:hover {
                 background: #0d7b6c;
             }
+        }
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
         }
     }
     .nav__subItem {
