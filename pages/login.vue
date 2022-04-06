@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-24 10:30:41
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-29 09:55:08
+ * @LastEditTime: 2022-04-04 17:23:13
  * @Description:
 -->
 <template>
@@ -65,8 +65,8 @@
 
                                 <el-form-item >
                                     <div class="flex-col">
-                                        <el-button type="primary" class="button__login" >登录</el-button>
-                                        <el-button class="button__register" @click="">没有账号？去注册</el-button>
+                                        <el-button type="primary" class="button__login" @click="onClick_1" >登录</el-button>
+                                        <el-button class="button__register" @click="toRegister">没有账号？去注册</el-button>
                                     </div>
                                 </el-form-item>
                             </el-form>
@@ -110,7 +110,7 @@
                                 <el-form-item >
                                     <div class="flex-col">
                                         <el-button type="primary" class="button__login" >登录</el-button>
-                                        <el-button class="button__register" @click="">没有账号？去注册</el-button>
+                                        <el-button class="button__register" @click="toRegister">没有账号？去注册</el-button>
                                     </div>
                                 </el-form-item>
                             </el-form>
@@ -155,17 +155,27 @@
     </div>
 </template>
 <script>
+import {login} from '@/api/test'
 export default {
     layout: 'full',
     data() {
         return {
-            form: {},
+            form: {
+                "username": "coding",
+                "password": "123456",
+                "remember_me": true
+            },
             activeName: "1"
         };
     },
     methods: {
         onClick_1() {
-            alert(1);
+            login(this.form).then( response => {
+                console.log(response);
+            })
+        },
+        toRegister() {
+            this.$router.push("/register")
         },
         handleClick() {},
         handleSubmit() {
@@ -194,7 +204,7 @@ export default {
 }
 .page-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;

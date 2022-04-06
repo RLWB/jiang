@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-26 11:56:23
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-01 21:50:54
+ * @LastEditTime: 2022-04-06 11:35:16
  * @Description:
 -->
 <template>
@@ -10,8 +10,8 @@
 
         <div class="page-top flex-col">
             <div class="button__group flex-row justify-between">
-                <el-button type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
-                <el-button type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button class="custom-button" type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button class="custom-button" type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
             <div class="banner-wrapper">
                 <img
@@ -20,10 +20,37 @@
                     src="@/assets/images/musicianOpenPlatform/banner.png"
                 />
             </div>
-            <div>111</div>
         </div>
 
         <div class="page-main flex-col align-center">
+
+            <div class="steps flex-col" v-if="true">
+                <div class="steps-header flex-row align-center">
+                    <div class="steps-header-left-box"></div>
+                    <div class="steps-title">申请企业音乐人进度</div>
+                </div>
+                <div class="step flex-row justify-between">
+                    <div class="step-item" v-for="(item, index) in loopData1" :key="index">
+                        <div class="step-item__main flex-col align-center">
+                            <div class="circle-box justify-center align-center" :class="index === 0 ? 'circle-box--active' : ''">
+                                <span class="steps__no">{{ index + 1 }}</span>
+                            </div>
+                            <div v-if="(index + 1) != loopData1.length" class="divider"></div>
+                            <div class="step-item__title" :style="{ color: item.lanhufontColor0 }" v-html="item.lanhutext0"></div>
+                            <div class="step-item__description" :style="{ color: item.lanhufontColor1 }" v-html="item.lanhutext1"></div>
+                            <div class="justify-center align-center">
+                                <el-button class="step-item__button" type="primary" v-show="false" @click="toApplyMusician('individual')">立即填写</el-button>
+                                <el-button class="step-item__button" type="primary" v-show="false" @click="toApplyMusician('individual')">重新填写</el-button>
+                                <el-button class="step-item__button" type="primary" v-show="false" @click="toApplyMusician('individual')">立即缴费</el-button>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="loopData1.length == 0">
+                        <div>恭喜您，企业音乐人申请成功！</div>
+                        <el-button class="step-button" type="primary" @click="toApplyMusician('individual')">进入音乐人创作中心</el-button>
+                    </div>
+                </div>
+            </div>
 
             <div class="mainTitle-wrapper flex-row align-center justify-center">
                 <img class="mainTitle-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/musicianOpenPlatform/sixFeatureTitles.png" />
@@ -51,7 +78,7 @@
 
             <div class="corporate-musician-wrapper flex-row justify-between">
                 <div class="corporate-item flex-col align-center" v-for="(item, index) in corporateItems" :key="index">
-                    <img class="corporate-item__icon" referrerpolicy="no-referrer" :src="'_nuxt/assets/images/musicianOpenPlatform/' + item.icon" />
+                    <img class="corporate-item__icon" referrerpolicy="no-referrer" :src="item.icon" />
                     <div class="corporate-item__title">{{ item.title }}</div>
                     <div class="corporate-item__content">
                         {{ item.content }}
@@ -60,14 +87,14 @@
                 </div>
             </div>
             <div class="main__button-wrapper align-center justify-center">
-                <el-button type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button class="custom-button" type="primary" @click="toApplyMusician('corporate')">申请企业音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
             <div class="subTitle-wrapper flex-row align-center justify-center">
                 <img class="subTitle-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/musicianOpenPlatform/applyForAnIndividualMusicianTitle.png" />
             </div>
             <div class="individualMusician-wrapper flex-row justify-between">
                 <div class="individualMusician-item flex-col align-center" v-for="(item, index) in individualMusicianItems" :key="index">
-                    <img class="individualMusician-item__icon" referrerpolicy="no-referrer" :src="'_nuxt/assets/images/musicianOpenPlatform/' + item.icon" />
+                    <img class="individualMusician-item__icon" referrerpolicy="no-referrer" :src="item.icon" />
                     <div class="individualMusician-item__title">{{ item.title }}</div>
                     <div class="individualMusician-item__content">
                         {{ item.content }}
@@ -76,12 +103,18 @@
                 </div>
             </div>
             <div class="main__button-wrapper align-center justify-center">
-                <el-button type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
+                <el-button class="custom-button" type="primary" @click="toApplyMusician('individual')">申请个人音乐人<i class="el-icon-right el-icon--right"></i></el-button>
             </div>
         </div>
     </div>
 </template>
 <script>
+import icon1 from '@/assets/images/musicianOpenPlatform/musician_icon1.png'
+import icon2 from '@/assets/images/musicianOpenPlatform/musician_icon2.png'
+import icon3 from '@/assets/images/musicianOpenPlatform/musician_icon3.png'
+import icon4 from '@/assets/images/musicianOpenPlatform/musician_icon4.png'
+import icon5 from '@/assets/images/musicianOpenPlatform/musician_icon5.png'
+
 export default {
   data() {
     return {
@@ -135,28 +168,57 @@ export default {
           lanhutext1: '为歌曲量身定制多维推广服务'
         }
       ],
+      loopData1: [
+        {
+          lanhutext0: '认证个人信息',
+          lanhufontColor0: '#403F3F',
+          lanhutext1: '确保填写的姓名与身份证号，以及上传的证件照片一致且真实。若认证失败将无法进入下个流程。',
+          lanhufontColor1: '#000000a6'
+        },
+        {
+          lanhutext0: '填写并提交个人信息',
+          lanhufontColor0: '#403f3fa6',
+          lanhutext1:
+            '按照表单要求准确填写个人信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；',
+          lanhufontColor1: '#0000005C'
+        },
+        {
+          lanhutext0: '上传音乐作品',
+          lanhufontColor0: '#403f3fa6',
+          lanhutext1:
+            '审核通过后，须在app或者网站上上传至少一个音乐作品。音乐作品提交审核后，请耐心等待。审核结果会以短信和系统消息形式发出；',
+          lanhufontColor1: '#0000005C'
+        },
+        {
+          lanhutext0: '缴纳年费',
+          lanhufontColor0: '#403f3fa6',
+          lanhutext1:
+            '上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。',
+          lanhufontColor1: '#0000005C'
+        }
+      ],
       constants: {},
       corporateItems: [
           {
-              icon: "musician_icon1.png",
+              icon: icon1,
               title: "注册/登录",
               content: "注册/登录音久音乐平台，支持手机号或第三方登录注册。",
               no: "1"
           },
           {
-              icon: "musician_icon2.png",
+              icon: icon2,
               title: "认证企业信息",
               content: "确保上传的营业执照法人、法人姓名、身份证号一致，且真实。若认证失败将无法进入下一步。",
               no: "2"
           },
           {
-              icon: "musician_icon3.png",
+              icon: icon3,
               title: "填写并提交企业信息",
               content: "按照表单要求准确填写企业信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；",
               no: "3"
           },
           {
-              icon: "musician_icon7.png",
+              icon: icon5,
               title: "缴纳年费",
               content: "上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。",
               no: "4"
@@ -164,53 +226,56 @@ export default {
       ],
       individualMusicianItems: [
           {
-              icon: "musician_icon1.png",
+              icon: icon1,
               title: "注册/登录",
               content: "注册/登录音久音乐平台，支持手机号或第三方登录注册。",
               no: "1"
           },
           {
-              icon: "musician_icon2.png",
+              icon: icon2,
               title: "认证个人信息",
               content: "确保填写的姓名与身份证号，以及上传的证件照片一致且真实。若认证失败将无法进入下个流程。",
               no: "2"
           },
           {
-              icon: "musician_icon3.png",
+              icon: icon3,
               title: "填写并提交个人信息",
               content: "按照表单要求准确填写个人信息，保证信息的真实性和准确性。提交后请耐心等待审核结果。审核结果会以短信和系统消息的形式发出；",
               no: "3"
           },
           {
-              icon: "musician_icon6.png",
+              icon: icon4,
               title: "上传音乐作品",
               content: "审核通过后，必须在app或者网站上上传至少一个音乐作品。音乐作品提交审核后，请耐心等待。审核结果会以短信和系统消息的形式发出；",
               no: "4"
           },
           {
-              icon: "musician_icon7.png",
+              icon: icon5,
               title: "缴纳年费",
               content: "上传的音乐作品审核通过后，在“我的”中的申请进度，跳转进入缴费页面。缴费成功后即完成整个企业音乐人申请流程。",
               no: "5"
           },
 
-      ]
+      ],
     };
+  },
+  mounted() {
+    //   this.loopData1 = [];
   },
   methods: {
       // 申请音乐人
       toApplyMusician(type) {
           if (type === "corporate") {
-              this.$router.push("/applyForACorporateMusician/certifiedEnterpriseInformation")
+              this.$router.push("/applyForACorporateMusician/authInfo")
           } else {
-              this.$router.push("/applyForAnIndividualMusician/certifiedEnterpriseInformation")
+              this.$router.push("/applyForAnIndividualMusician/authInfo")
           }
       }
   }
 };
 </script>
 <style lang="scss" scoped >
-.el-button {
+.custom-button {
     font-family: YouSheBiaoTiHei;
     width: 208px;
     height: 50px;
@@ -246,11 +311,95 @@ export default {
                 height: 600px;
             }
         }
+
     }
 
     .page-main {
         // width: 100%;
         padding: 90px 10.1% 150px 10.1%;
+        .steps {
+            z-index: 9;
+            width: 90%;
+            min-height: 336px;
+            margin: 40px 0 93px 0;
+            background: #FFFFFF;
+            margin-top: -140px;
+            border: 1px solid #F2F2F2B8;
+            box-shadow: 0 2px 15px 0 #E9E9E996;
+            .steps-header {
+                height: 80px;
+                border-bottom: 1px solid #E6E6E6FF;
+                &-left-box {
+                    width: 12px;
+                    height: 24px;
+                    background: #24CCB4;
+                    margin: 0 20px;
+                }
+                .steps-title {
+                    font-size: 2rem;
+                }
+            }
+            .demo {
+                width: 100%;
+                height: 90px;
+                position: relative;
+            }
+
+            &__no {
+                color: #FFFFFF;
+                font-size: 1.37vw;
+                text-align: center;
+            }
+
+            .step {
+                box-sizing:border-box;
+                width: 100%;
+                padding: 24px 13px 0;
+                position: relative;
+                &-item {
+                    width: 23.27%;
+                    &__main {
+                        position: relative;
+                    }
+                    &__title {
+                        margin-top: 16px;
+                        font-size: 1.5rem;
+                        white-space: nowrap;
+                    }
+                    &__description {
+                        font-size: 1.17rem;
+                        letter-spacing: -0.15555556118488312px;
+                        margin-top: 10px;
+                    }
+                    &__button {
+                        margin-top: 10px;
+                        width: 140px;
+                        height: 48px;
+                    }
+                }
+            }
+            .circle-box {
+                height: 2.52vw;
+                width: 2.52vw;
+                border-radius: 50%;
+                background: #CAE5E1;
+            }
+            .circle-box.circle-box--active {
+                background: #00B69C;
+            }
+            .divider {
+                width: 90%;
+                position: absolute;
+                top: calc( 2.52vw / 2 );
+                left: 60%;
+                border-bottom: 6px solid rgba(208, 208, 208, 0.39) ;
+                overflow: hidden;
+            }
+            .step-button {
+                width: 223px;
+                height: 48px;
+            }
+        }
         .mainTitle-wrapper {
             width: 100%;
             &__img {

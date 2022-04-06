@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-25 23:01:05
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-29 09:57:33
+ * @LastEditTime: 2022-04-03 12:38:11
  * @Description:
 -->
 <template>
@@ -124,7 +124,7 @@ export default {
 }
 .page-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;

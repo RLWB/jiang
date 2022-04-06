@@ -1,10 +1,10 @@
 <!--
  * @Author: Kuntey
- * @Date: 2022-04-01 21:36:41
+ * @Date: 2022-04-06 16:03:05
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-06 15:33:59
+ * @LastEditTime: 2022-04-06 16:03:06
  * @Description:
 -->
 <template>
-    <nuxt-child />
+    <div>222</div>
 </template>

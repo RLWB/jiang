@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-24 10:30:20
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-29 09:55:39
+ * @LastEditTime: 2022-04-03 12:37:49
  * @Description:
 -->
 <template>
@@ -76,7 +76,7 @@
                         <el-form-item >
                             <div class="flex-col">
                                 <el-button class="button__register">注册</el-button>
-                                <el-button type="primary" class="button__login" style="" @click="">已有账号？去登录</el-button>
+                                <el-button type="primary" class="button__login" style="" @click="toLogin">已有账号？去登录</el-button>
                             </div>
                         </el-form-item>
                     </el-form>
@@ -109,6 +109,9 @@ export default {
         onClick_1() {
             alert(1);
         },
+        toLogin() {
+            this.$router.push("/login");
+        },
         handleSubmit() {
             console.log('submit!');
         }
@@ -130,7 +133,7 @@ export default {
 }
 .page-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;

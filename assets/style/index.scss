@@ -13,9 +13,15 @@
     font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
         Arial, PingFang SC-Light;
 }
-body {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 button {
@@ -24,11 +30,17 @@ button {
     border: 1px solid transparent;
     outline: none;
     background-color: transparent;
-  }
+}
 
 button:active {
     opacity: 0.6;
 }
+
+.button--normal {
+    width: 162px;
+    height: 50px;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;

@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 11:56:00
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-27 21:09:41
+ * @LastEditTime: 2022-04-05 11:04:03
  * @Description:
  */
 export default {
@@ -11,6 +11,9 @@ export default {
     server: {
         port: 3009,
         host: '127.0.0.1'
+    },
+    env: {
+        baseUrl: process.env.BASE_URL
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -54,6 +57,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        '@nuxtjs/axios'
     ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -67,12 +71,23 @@ export default {
     router: {
         // middleware: ['auth', 'i18n'],
         extendRoutes (routes, resolve) {
-        routes.push({
-            path: '/',
-            redirect: {
-                name: '/lanhu_yinyuerenchuangzuozhongxinzuopinguanliyinyueshenhetongguo'
-            }
-        })
+            routes.push({
+                path: '/',
+                // redirect: {
+                //     name: '/lanhu_yinyuerenchuangzuozhongxinzuopinguanliyinyueshenhetongguo'
+                // }
+            })
         }
     },
+
+    axios: {
+        proxy: process.env.NODE_ENV === 'development' ? true : false,
+    },
+    proxy: {
+        [process.env.BASE_URL]: {
+            target: 'https://yinjiuyinyue-service.grizzlysoft.cn/api/',
+            changeOrigin: true, // 是否跨域
+            pathRewrite: {['^' + process.env.BASE_URL] : ''}
+        }
+    }
 }
