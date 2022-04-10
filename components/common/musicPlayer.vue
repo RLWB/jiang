@@ -2,100 +2,453 @@
  * @Author: Kuntey
  * @Date: 2022-03-29 10:10:43
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-03-31 18:14:35
+ * @LastEditTime: 2022-04-09 11:46:45
  * @Description:
 -->
 <template>
-    <div>
-        <div class="block15 flex-col">
-        <div class="outer1 flex-row">
-          <div class="layer4 flex-col">
-            <img
-              class="label1"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPngc90bbe5b50ae3e82bb1ff232c0918fe3cb71df41ebc90ef69f1345381bba1076.png"
-            />
-          </div>
-          <div class="layer5 flex-col justify-between">
-            <div class="section1 flex-row">
-              <span class="word20">慢慢喜欢你</span>
-              <span class="info11">王靖雯&nbsp;/唐汉霄&nbsp;/信&nbsp;/马伯骞</span>
-              <span class="word21">02:12&nbsp;/&nbsp;04:39</span>
+  <div class="player" @click="toggleLyrics">
+    <div
+      class="progress-bar"
+      :class="{
+        nyancat: settings.nyancatStyle,
+        'nyancat-stop': settings.nyancatStyle && !player.playing,
+      }"
+      @click.stop
+    >
+      <vue-slider
+        v-model="player.progress"
+        :min="0"
+        :max="player.currentTrackDuration"
+        :interval="1"
+        :drag-on-click="true"
+        :duration="0"
+        :dot-size="12"
+        :height="2"
+        :tooltip-formatter="formatTrackTime"
+        :lazy="true"
+        :silent="true"
+      ></vue-slider>
+    </div>
+    <div class="controls">
+      <div class="playing">
+        <div class="container" @click.stop>
+          <img
+            :src="currentTrack.al && currentTrack.al.picUrl | resizeImage(224)"
+            @click="goToAlbum"
+          />
+          <div class="track-info" :title="audioSource">
+            <div
+              :class="['name', { 'has-list': hasList() }]"
+              @click="hasList() && goToList()"
+            >
+              {{ currentTrack.name }}
             </div>
-            <img
-              class="img7"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng723d0a5af4d9b7b509374e8d59a46bef65b8eb9a68077e27eef50558674bc9e2.png"
-            />
+            <div class="artist">
+              <span
+                v-for="(ar, index) in currentTrack.ar"
+                :key="ar.id"
+                @click="ar.id && goToArtist(ar.id)"
+              >
+                <span :class="{ ar: ar.id }"> {{ ar.name }} </span
+                ><span v-if="index !== currentTrack.ar.length - 1">, </span>
+              </span>
+            </div>
           </div>
-          <img
-            class="label2"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPng28a999af10cbcf0678c493fbf6fd29c6dbdc7b6f546615de6c8c4ce0efcfbd53.png"
-          />
-          <img
-            class="icon2"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPngb227ec223e61ac5bb452f4e755e2c6f95e65410ad9a5128c3009b451e8b9388c.png"
-          />
-          <img
-            class="icon3"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPngc673ef1998bb8d46994a0bda9e4253bbe4c75bfe2396630430a29443061870c1.png"
-          />
-          <img
-            class="pic6"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPngc5db3890ad51c9095442f400781084f85f32c711b8c17db582423ca7f8923ecc.png"
-          />
-          <img
-            class="label3"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPng9177df24ae622bfd112e1d895426742506b59d71abb8d3cddd0fedd157865b1f.png"
-          />
-          <img
-            class="label4"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPng1f1a4db1616fd924ba92fc48dc766a88c9e14d0adce57cac36ff8ce31c1e478c.png"
-          />
-          <div class="layer6 flex-col">
-            <img
-              class="icon4"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng6dbe33ada25859c9b34a462ad4f6d32b4c376501a65734c18b42dd9e287aaa7a.png"
-            />
-          </div>
-          <img
-            class="label5"
-            referrerpolicy="no-referrer"
-            src="@/assets/images/SketchPngc6a486fcc0b4df7bb57013b9939dd956e12165481c0426f42c0a3601ed267b00.png"
-          />
-          <div class="layer7 flex-col justify-between">
-            <img
-              class="label6"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng80c1dc15f157a898c6312cb2e8d95b5678b72b0205e2ab8ad8215715882faf43.png"
-            />
-            <img
-              class="img8"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng22e5b1818509273949bec1d74f73175deff64d6f7e5cc8bd4f02d6abf9ad2573.png"
-            />
-          </div>
-          <div class="layer8 flex-col justify-between">
-            <img
-              class="icon5"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng936fb1ba0ddb9f0951bf06a559ee091f9eafa1ecf5c8463912e68957748d8f67.png"
-            />
-            <img
-              class="icon6"
-              referrerpolicy="no-referrer"
-              src="@/assets/images/SketchPng8b5e5882e19e2150ed6c2294b204b7c5fe7a3729ade75209386cdf63dfe69607.png"
-            />
+          <div class="like-button">
+            <button-icon
+              :title="$t('player.like')"
+              @click.native="likeATrack(player.currentTrack.id)"
+            >
+              <svg-icon
+                v-show="!player.isCurrentTrackLiked"
+                icon-class="heart"
+              ></svg-icon>
+              <svg-icon
+                v-show="player.isCurrentTrackLiked"
+                icon-class="heart-solid"
+              ></svg-icon>
+            </button-icon>
           </div>
         </div>
-        <div class="outer2 flex-col justify-center"><span class="word22">123</span></div>
+        <div class="blank"></div>
+      </div>
+      <div class="middle-control-buttons">
+        <div class="blank"></div>
+        <div class="container" @click.stop>
+          <button-icon
+            v-show="!player.isPersonalFM"
+            :title="$t('player.previous')"
+            @click.native="playPrevTrack"
+            ><svg-icon icon-class="previous"
+          /></button-icon>
+          <button-icon
+            v-show="player.isPersonalFM"
+            title="不喜欢"
+            @click.native="moveToFMTrash"
+            ><svg-icon icon-class="thumbs-down"
+          /></button-icon>
+          <button-icon
+            class="play"
+            :title="$t(player.playing ? 'player.pause' : 'player.play')"
+            @click.native="playOrPause"
+          >
+            <svg-icon :icon-class="player.playing ? 'pause' : 'play'"
+          /></button-icon>
+          <button-icon :title="$t('player.next')" @click.native="playNextTrack"
+            ><svg-icon icon-class="next"
+          /></button-icon>
+        </div>
+        <div class="blank"></div>
+      </div>
+      <div class="right-control-buttons">
+        <div class="blank"></div>
+        <div class="container" @click.stop>
+          <button-icon
+            :title="$t('player.nextUp')"
+            :class="{
+              active: $route.name === 'next',
+              disabled: player.isPersonalFM,
+            }"
+            @click.native="goToNextTracksPage"
+            ><svg-icon icon-class="list"
+          /></button-icon>
+          <button-icon
+            :class="{
+              active: player.repeatMode !== 'off',
+              disabled: player.isPersonalFM,
+            }"
+            :title="
+              player.repeatMode === 'one'
+                ? $t('player.repeatTrack')
+                : $t('player.repeat')
+            "
+            @click.native="switchRepeatMode"
+          >
+            <svg-icon
+              v-show="player.repeatMode !== 'one'"
+              icon-class="repeat"
+            />
+            <svg-icon
+              v-show="player.repeatMode === 'one'"
+              icon-class="repeat-1"
+            />
+          </button-icon>
+          <button-icon
+            :class="{ active: player.shuffle, disabled: player.isPersonalFM }"
+            :title="$t('player.shuffle')"
+            @click.native="switchShuffle"
+            ><svg-icon icon-class="shuffle"
+          /></button-icon>
+          <button-icon
+            v-if="settings.enableReversedMode"
+            :class="{ active: player.reversed, disabled: player.isPersonalFM }"
+            :title="$t('player.reversed')"
+            @click.native="switchReversed"
+            ><svg-icon icon-class="sort-up"
+          /></button-icon>
+          <div class="volume-control">
+            <button-icon :title="$t('player.mute')" @click.native="mute">
+              <svg-icon v-show="volume > 0.5" icon-class="volume" />
+              <svg-icon v-show="volume === 0" icon-class="volume-mute" />
+              <svg-icon
+                v-show="volume <= 0.5 && volume !== 0"
+                icon-class="volume-half"
+              />
+            </button-icon>
+            <div class="volume-bar">
+              <vue-slider
+                v-model="volume"
+                :min="0"
+                :max="1"
+                :interval="0.01"
+                :drag-on-click="true"
+                :duration="0"
+                tooltip="none"
+                :dot-size="12"
+              ></vue-slider>
+            </div>
+          </div>
+
+          <button-icon
+            class="lyrics-button"
+            title="歌词"
+            style="margin-left: 12px"
+            @click.native="toggleLyrics"
+            ><svg-icon icon-class="arrow-up"
+          /></button-icon>
+        </div>
       </div>
     </div>
+  </div>
 </template>
+
+<script>
+import { mapState, mapMutations, mapActions } from 'vuex';
+import '@/assets/style/slider.css';
+
+import ButtonIcon from '@/components/common/ButtonIcon.vue';
+// import VueSlider from 'vue-slider-component';
+import VueSlider from 'vue-slider-component/dist-css/vue-slider-component.umd.min.js'
+import 'vue-slider-component/dist-css/vue-slider-component.css'
+import 'vue-slider-component/theme/default.css'
+import { goToListSource, hasListSource } from '@/utils/playList';
+
+export default {
+  name: 'Player',
+  components: {
+    ButtonIcon,
+    VueSlider,
+  },
+  computed: {
+    ...mapState(['player', 'settings', 'data']),
+    currentTrack() {
+      return this.player.currentTrack;
+    },
+    volume: {
+      get() {
+        return this.player.volume;
+      },
+      set(value) {
+        this.player.volume = value;
+      },
+    },
+    playing() {
+      return this.player.playing;
+    },
+    audioSource() {
+      return this.player._howler?._src.includes('kuwo.cn')
+        ? '音源来自酷我音乐'
+        : '';
+    },
+  },
+  methods: {
+    ...mapMutations(['toggleLyrics']),
+    ...mapActions(['showToast', 'likeATrack']),
+    playPrevTrack() {
+      this.player.playPrevTrack();
+    },
+    playOrPause() {
+      this.player.playOrPause();
+    },
+    playNextTrack() {
+      if (this.player.isPersonalFM) {
+        this.player.playNextFMTrack();
+      } else {
+        this.player.playNextTrack();
+      }
+    },
+    goToNextTracksPage() {
+      if (this.player.isPersonalFM) return;
+      this.$route.name === 'next'
+        ? this.$router.go(-1)
+        : this.$router.push({ name: 'next' });
+    },
+    formatTrackTime(value) {
+      if (!value) return '';
+      let min = ~~((value / 60) % 60);
+      let sec = (~~(value % 60)).toString().padStart(2, '0');
+      return `${min}:${sec}`;
+    },
+    hasList() {
+      return hasListSource();
+    },
+    goToList() {
+      goToListSource();
+    },
+    goToAlbum() {
+      if (this.player.currentTrack.al.id === 0) return;
+      this.$router.push({ path: '/album/' + this.player.currentTrack.al.id });
+    },
+    goToArtist(id) {
+      this.$router.push({ path: '/artist/' + id });
+    },
+    moveToFMTrash() {
+      this.player.moveToFMTrash();
+    },
+    switchRepeatMode() {
+      this.player.switchRepeatMode();
+    },
+    switchShuffle() {
+      this.player.switchShuffle();
+    },
+    switchReversed() {
+      this.player.switchReversed();
+    },
+    mute() {
+      this.player.mute();
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 64px;
+  backdrop-filter: saturate(180%) blur(30px);
+  // background-color: rgba(255, 255, 255, 0.86);
+  background-color: var(--color-navbar-bg);
+  z-index: 100;
+}
+
+@supports (-moz-appearance: none) {
+  .player {
+    background-color: var(--color-body-bg);
+  }
+}
+
+.progress-bar {
+  margin-top: -6px;
+  margin-bottom: -6px;
+  width: 100%;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+  padding: {
+    right: 10vw;
+    left: 10vw;
+  }
+}
+
+@media (max-width: 1336px) {
+  .controls {
+    padding: 0 5vw;
+  }
+}
+
+.blank {
+  flex-grow: 1;
+}
+
+.playing {
+  display: flex;
+}
+
+.playing .container {
+  display: flex;
+  align-items: center;
+  img {
+    height: 46px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    user-select: none;
+  }
+  .track-info {
+    height: 46px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      opacity: 0.88;
+      color: var(--color-text);
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      word-break: break-all;
+    }
+    .has-list {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .artist {
+      font-size: 12px;
+      opacity: 0.58;
+      color: var(--color-text);
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      word-break: break-all;
+      span.ar {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.middle-control-buttons {
+  display: flex;
+}
+
+.middle-control-buttons .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  .button-icon {
+    margin: 0 8px;
+  }
+  .play {
+    height: 42px;
+    width: 42px;
+    .svg-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.right-control-buttons {
+  display: flex;
+}
+
+.right-control-buttons .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .expand {
+    margin-left: 24px;
+    .svg-icon {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .active .svg-icon {
+    color: var(--color-primary);
+  }
+  .volume-control {
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    .volume-bar {
+      width: 84px;
+    }
+  }
+}
+
+.like-button {
+  margin-left: 16px;
+}
+
+.button-icon.disabled {
+  cursor: default;
+  opacity: 0.38;
+  &:hover {
+    background: none;
+  }
+  &:active {
+    transform: unset;
+  }
+}
+</style>

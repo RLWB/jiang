@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 11:56:00
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-05 11:04:03
+ * @LastEditTime: 2022-04-09 14:50:21
  * @Description:
  */
 export default {
@@ -77,6 +77,12 @@ export default {
                 //     name: '/lanhu_yinyuerenchuangzuozhongxinzuopinguanliyinyueshenhetongguo'
                 // }
             })
+        }
+    },
+    vue: {
+        config: {
+            productionTip: true,
+            devtools: true
         }
     },
 

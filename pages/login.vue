@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-24 10:30:41
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-04 17:23:13
+ * @LastEditTime: 2022-04-09 14:29:48
  * @Description:
 -->
 <template>
@@ -27,10 +27,10 @@
 
                     <el-tabs v-model="activeName" @tab-click="handleClick" stretch >
                         <el-tab-pane label="验证码登录" name="1">
-                            <el-form ref="form" :model="form" label-width="0px">
-                                <el-form-item >
+                            <el-form ref="codeForm" :model="codeForm" :rules="rules" label-width="0px">
+                                <el-form-item prop="userAccount">
                                     <div class="form-item-wrapper">
-                                        <el-input v-model="form.phone" placeholder="请输入手机号" >
+                                        <el-input v-model="codeForm.userAccount" placeholder="请输入手机号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
                                                 <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/phone.png" />
                                             </div>
@@ -38,15 +38,15 @@
                                     </div>
                                 </el-form-item>
 
-                                <el-form-item >
+                                <el-form-item prop="code">
                                     <div class="form-item-wrapper flex-row align-center justify-between">
-                                        <el-input v-model="form.phone" placeholder="请输入" >
+                                        <el-input v-model="codeForm.code" placeholder="请输入" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
                                                 <img class="form-item-wrapper__img" slot="prefix" referrerpolicy="no-referrer" src="@/assets/images/verificationCode.png" />
                                             </div>
                                             <div slot="suffix" class="align-center justify-center" style="height: 100%" >
-                                                <el-button type="primary" @click="onClick_1" v-if="true">获取验证码</el-button>
-                                                <el-button v-else>23s后重新获取</el-button>
+                                                <el-button type="primary" @click="getVerificationCodeByPhone" v-if="btnVisible">获取验证码</el-button>
+                                                <el-button v-else style="background: #72A69F; color: #FFF;" disabled>{{ seconds }}s后重新获取</el-button>
                                             </div>
                                         </el-input>
 
@@ -65,17 +65,17 @@
 
                                 <el-form-item >
                                     <div class="flex-col">
-                                        <el-button type="primary" class="button__login" @click="onClick_1" >登录</el-button>
+                                        <el-button type="primary" class="button__login" @click="handleSubmitByCode" >登录</el-button>
                                         <el-button class="button__register" @click="toRegister">没有账号？去注册</el-button>
                                     </div>
                                 </el-form-item>
                             </el-form>
                         </el-tab-pane>
                         <el-tab-pane label="密码登录" name="2">
-                            <el-form ref="form" :model="form" label-width="0px">
-                                <el-form-item >
+                            <el-form ref="passwordForm" :model="passwordForm" :rules="rules" label-width="0px">
+                                <el-form-item prop="userAccount">
                                     <div class="form-item-wrapper flex-row align-center">
-                                        <el-input v-model="form.phone" placeholder="请输入手机号" >
+                                        <el-input v-model="passwordForm.userAccount" placeholder="请输入手机号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
                                                 <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/phone.png" />
                                             </div>
@@ -83,9 +83,9 @@
                                     </div>
                                 </el-form-item>
 
-                                <el-form-item >
-                                    <div class="form-item-wrapper flex-row align-center">
-                                        <el-input v-model="form.phone" placeholder="请输入8-12位密码，须包含数字、英文和符号" >
+                                <el-form-item prop="userPassword">
+                                    <div class="form-item-wrapper form-item-password flex-row align-center">
+                                        <el-input v-model="passwordForm.userPassword" placeholder="请输入8-12位密码，须包含数字、英文和符号" >
                                             <div slot="prefix" class="align-center justify-center" style="height: 100%">
                                                 <img class="form-item-wrapper__img" referrerpolicy="no-referrer" src="@/assets/images/password.png" />
                                             </div>
@@ -101,7 +101,7 @@
                                     </div>
                                     <div style="float: right;">
                                         <div class="checkbox-wrapper">
-                                            <el-checkbox></el-checkbox>
+                                            <el-checkbox v-model="autoLoginChecked"></el-checkbox>
                                             <span style="color: #00000073;">下次自动登录</span>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
 
                                 <el-form-item >
                                     <div class="flex-col">
-                                        <el-button type="primary" class="button__login" >登录</el-button>
+                                        <el-button type="primary" class="button__login" @click="handleSubmitByPassword" >登录</el-button>
                                         <el-button class="button__register" @click="toRegister">没有账号？去注册</el-button>
                                     </div>
                                 </el-form-item>
@@ -135,7 +135,7 @@
 
                     <div class="bottom-wrapper flex-row justify-start" v-show="activeName != '3'">
                         <div class="checkbox-wrapper">
-                            <el-checkbox></el-checkbox>
+                            <el-checkbox v-model="serverChecked"></el-checkbox>
                         </div>
                         <div class="text-wrapper">
                             <span>我已阅读并同意</span>
@@ -155,41 +155,104 @@
     </div>
 </template>
 <script>
-import {login} from '@/api/test'
+import { getVerificationCode } from '@/api/login'
 export default {
     layout: 'full',
     data() {
         return {
-            form: {
-                "username": "coding",
-                "password": "123456",
-                "remember_me": true
+            activeName: "1",
+            codeForm: {
+                userAccount: "",
+                code: ""
             },
-            activeName: "1"
+            passwordForm: {
+                userAccount: "",
+                userPassword: "",
+            },
+            rules: {
+                userAccount: [
+                    { required: true, message: '请输入手机号码', trigger: 'blur' },
+                    { pattern: /^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[189]))\d{8}$/, message: '手机号格式错误', trigger: 'blur' },
+                ],
+                userPassword: [
+                    { required: true, message: '请输入密码', trigger: 'blur' },
+                    { min: 8, max: 12, message: '请输入8-12位密码', trigger: 'blur' },
+                    // { pattern: /^\S*(?=\S{8,})(?=\S*\d)(?=\S*[a-z])(?=\S*[!@#$%^&*? ])\S*$/, message: '须包含数字、英文和特殊符号', trigger: 'blur' }
+                ],
+                code: [
+                    { required: true, message: '请输入验证码', trigger: 'blur' },
+                ]
+            },
+            btnVisible: true,
+            seconds: 23,
+            interval: null,
+            autoLoginChecked: false,
+            serverChecked: false,
         };
     },
     methods: {
-        onClick_1() {
-            login(this.form).then( response => {
-                console.log(response);
+        // 获取验证码
+        getVerificationCodeByPhone() {
+            this.$refs.form.validateField("userAccount", valid => {
+                if (valid == "") {
+                    this.btnVisible = false;
+                    this.countDown();
+                    const data = {
+                        userPhone: this.form.userAccount,
+                        vType: 1
+                    };
+                    getVerificationCode(data).then( response => {
+                        if (response.code === 200) {
+                            this.$message.success(response.msg);
+                        } else {
+                            this.$message.error(response.msg);
+                        }
+                    })
+                }
             })
+        },
+        // 验证码倒计时
+        countDown() {
+            this.interval = setInterval(
+                () => {
+                    if (this.seconds == 0) {
+                        this.interval = null;
+                        this.btnVisible = true;
+                        this.seconds = 23;
+                    }
+                    this.seconds--;
+                },
+            1000)
         },
         toRegister() {
             this.$router.push("/register")
         },
-        handleClick() {},
-        handleSubmit() {
-            console.log('submit!');
+        handleClick() {
+            this.$refs.codeForm.resetFields();
+            this.$refs.passwordForm.resetFields();
+        },
+        handleSubmitByPassword() {
+            if ( !(this.serverChecked ) ) {
+                this.$message.warning("请勾选相关服务及隐私政策");
+                return;
+            };
+            this.$store.dispatch("user/Login", this.passwordForm).then( success => {
+                this.$router.push("/");
+            })
+        },
+        handleSubmitByCode() {
+            if ( !(this.serverChecked ) ) {
+                this.$message.warning("请勾选相关服务及隐私政策");
+                return;
+            };
+            this.$store.dispatch("codeLogin", this.codeForm).then( success => {
+                this.$router.push("/")
+            })
         }
     }
 };
 </script>
 <style lang="scss" scoped>
-.el-form {
-    .el-form-item {
-        margin-bottom: 14px;
-    }
-}
 .el-input {
     ::v-deep input {
         width: 400px;
@@ -262,20 +325,20 @@ export default {
                 }
             }
             .form-item-wrapper {
-                // width: 400px;
-                // height: 56px;
-                // border: 1px solid rgba(218, 218, 218, 1);
-                // background-color: rgba(255, 255, 255, 1);
                 &__img {
-                    // margin: 0 15px 0 12px;
                     width: 28px;
                     height: 28px;
                 }
-                .el-input {
-                    // width: 324px;
-                }
                 button {
                     margin: 0 6px 0 23px;
+                }
+            }
+            .form-item-password {
+                .el-input {
+                    // width: 324px;
+                    ::v-deep input {
+                        padding: 0 52px 0 57px;
+                    }
                 }
             }
 

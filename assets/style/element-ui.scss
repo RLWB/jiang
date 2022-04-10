@@ -108,3 +108,18 @@
 .el-dropdown .el-dropdown-link{
   color: var(--el-color-primary) !important;
 }
+
+.el-popper {
+    border-radius: 0 !important;
+    .popper__arrow {
+        display: none !important;
+    }
+}
+
+.el-dropdown-menu {
+    .el-dropdown-menu__item {
+        padding: 0 30px;
+        font-size: 1.5rem;
+        letter-spacing: 0.03rem;
+    }
+}

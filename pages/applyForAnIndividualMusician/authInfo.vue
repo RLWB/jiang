@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-04-01 21:51:21
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-05 20:05:40
+ * @LastEditTime: 2022-04-07 09:16:00
  * @Description:
 -->
 <!--
@@ -39,7 +39,7 @@
             </div>
 
             <div class="form-title justify-center">
-                <span class="form-title__text">认证企业信息</span>
+                <span class="form-title__text">认证个人信息</span>
             </div>
 
             <div class="form justify-center">

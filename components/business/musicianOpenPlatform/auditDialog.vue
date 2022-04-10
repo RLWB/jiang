@@ -2,14 +2,14 @@
  * @Author: Kuntey
  * @Date: 2022-04-02 14:53:28
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-04 12:39:56
+ * @LastEditTime: 2022-04-10 21:21:39
  * @Description:
 -->
 <template>
     <el-dialog title="提交成功" :visible.sync="dialogVisible" width="46.75%" center>
         <el-result>
             <template slot="icon">
-                <img class="icon__img" referrerpolicy="no-referrer" src="@/assets/images/img/SketchPng07924a7667b1131ae20f0e934230b52fbae4d49239bfcb7020ab3e018d602cf9.png" />
+                <img class="icon__img" referrerpolicy="no-referrer" src="@/assets/images/SketchPng07924a7667b1131ae20f0e934230b52fbae4d49239bfcb7020ab3e018d602cf9.png" />
             </template>
             <template slot="title">
                 <span class="title__text">
@@ -27,7 +27,7 @@
             </template>
             <template slot="extra">
                 <el-button type="info" @click="handleClose">取消</el-button>
-                <el-button type="primary" @click="handleClose">查看进度</el-button>
+                <el-button type="primary" @click="handleBack">查看进度</el-button>
             </template>
         </el-result>
     </el-dialog>
@@ -45,11 +45,10 @@
                 this.dialogVisible = true;
             },
             handleClose(done) {
-                this.$confirm('确认关闭？')
-                    .then(_ => {
-                        done();
-                    })
-                    .catch(_ => {});
+                this.dialogVisible = false;
+            },
+            handleBack() {
+                this.$router.push({ path: '/musicianOpenPlatform' })
             }
         }
     };

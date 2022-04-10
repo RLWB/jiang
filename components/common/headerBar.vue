@@ -2,7 +2,7 @@
  * @Author: Kuntey
  * @Date: 2022-03-23 18:05:12
  * @LastEditors: Kuntey
- * @LastEditTime: 2022-04-01 16:44:30
+ * @LastEditTime: 2022-04-10 21:28:16
  * @Description:
 -->
 <template>
@@ -18,22 +18,22 @@
                 <el-col :span="10" :offset="0">
                     <nav class="nav flex-row align-center justify-between">
                         <nuxt-link to="/">
-                            <div class="nav__item" @mouseenter="isShow = true">
+                            <div class="nav-item" :class="isHover ? 'nav-item--hover' : ''" @mouseenter="handleMouseenter(true)">
                                 发现音乐
                             </div>
                         </nuxt-link>
                         <nuxt-link to="/musician">
-                            <div class="nav__item" @mouseenter="isShow = false">
+                            <div class="nav-item" @mouseenter="handleMouseenter(false)">
                                 我的音乐
                             </div>
                         </nuxt-link>
                         <nuxt-link to="/musicianOpenPlatform">
-                            <div class="nav__item" @mouseenter="isShow = false">
+                            <div class="nav-item" @mouseenter="handleMouseenter(false)">
                                 音乐人开放平台
                             </div>
                         </nuxt-link>
                         <nuxt-link to="/">
-                            <div class="nav__item" @mouseenter="isShow = false">
+                            <div class="nav-item" @mouseenter="handleMouseenter(false)">
                                 关于我们
                             </div>
                         </nuxt-link>
@@ -46,22 +46,17 @@
 
                 <el-col :span="3" :offset="0">
                     <div class="right-menu">
-                        <div class="right-menu__item" style="font-size: 1.4rem;" v-if="true" >
-                            <nuxt-link class="a_custom" to="/login" target="_blank" >登录</nuxt-link>
+                        <div class="right-menu__item" style="font-size: 1.4rem;" v-if="!hasLogin" >
+                            <nuxt-link class="a_custom" to="/login" >登录</nuxt-link>
                             <span>/</span>
-                            <nuxt-link class="a_custom" to="/register" target="_blank" >注册</nuxt-link>
+                            <nuxt-link class="a_custom" to="/register" >注册</nuxt-link>
                         </div>
                         <div class="avatar-container" v-else >
-                            <el-dropdown @command="handleCommand" class="right-menu-item hover-effect" trigger="click">
+                            <el-dropdown @command="handleCommand" class="right-menu-item hover-effect" trigger="click" placement="bottom-start">
                                 <div class="avatar-wrapper">
-                                    <!-- <img :src="getters.avatar" class="user-avatar" /> -->
-                                    <img
-                                        class="user-avatar"
-                                        referrerpolicy="no-referrer"
-                                        src="@/assets/images/default-avatar.png"
-                                    />
+                                    <img class="user-avatar" referrerpolicy="no-referrer" src="@/assets/images/default-avatar.png" />
+                                    <span class="user-name">用户名</span>
                                     <i class="el-icon-caret-bottom"></i>
-                                    <el-icon><caret-bottom /></el-icon>
                                 </div>
                                 <template #dropdown>
                                     <el-dropdown-menu>
@@ -89,7 +84,7 @@
             </el-row>
 
         </div>
-        <div class="nav__subItem align-center justify-center" v-show="isShow" @mouseleave="isShow = false">
+        <div class="nav__subItem align-center justify-center" v-show="isShow" @mouseleave="handleMouseleave(false)">
             <ul class="ul flex-row justify-between">
                 <li class="ul__li ">推荐</li>
                 <li class="ul__li ">音乐人</li>
@@ -104,14 +99,39 @@
 </template>
 
 <script>
+import { getToken, removeToken } from '~/utils/auth';
 export default {
     data() {
         return {
             isShow: false,
-            search: ''
+            isHover: false,
+            search: '',
+            hasLogin: false,
+        }
+    },
+    mounted() {
+        const token = getToken();
+        if (token) {
+            this.hasLogin = true;
         }
     },
     methods: {
+        handleMouseenter(boolean) {
+            this.isShow = boolean;
+            this.isHover = boolean;
+        },
+        handleMouseleave(boolean) {
+            this.isShow = boolean;
+            this.isHover = boolean;
+        },
+        handleCommand(command) {
+            this.$message('click on item ' + command);
+            if (command === "logout") {
+                this.$store.dispatch("user/LogOut").then( success => {
+                    this.$router.go(0);
+                })
+            }
+        },
         toLogin() {
             this.$router.push('/login')
         }
@@ -120,6 +140,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .header-wrapper {
     width: 100%;
     // height: 129px;
@@ -136,7 +157,7 @@ export default {
 
     }
     .nav {
-        &__item {
+        &-item {
             color: #FFFFFF;
             font-size: 1.5rem;
             padding: 52px 25px;
@@ -144,6 +165,9 @@ export default {
             &:hover {
                 background: #0d7b6c;
             }
+        }
+        &-item--hover {
+            background: #0d7b6c;
         }
 
         a {
@@ -229,6 +253,8 @@ export default {
         .avatar-wrapper {
             margin-top: 5px;
             position: relative;
+            display: flex;
+            align-items: center;
 
             .user-avatar {
                 cursor: pointer;
@@ -236,13 +262,18 @@ export default {
                 height: 40px;
                 border-radius: 10px;
             }
+            .user-name {
+                color: #FFFFFF;
+                margin: 0 10px;
+            }
 
             i {
                 cursor: pointer;
-                position: absolute;
-                right: -20px;
-                top: 25px;
-                font-size: 12px;
+                // position: absolute;
+                // right: -20px;
+                // top: 25px;
+                color: #FFFFFF;
+                font-size: 1.4rem;
             }
         }
     }
