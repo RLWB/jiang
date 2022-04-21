@@ -54,8 +54,8 @@ export default {
       {
         /* module options */
         netlifyToml: {
-          from: "/api",
-          to: "https://yinjiuyinyue-service.grizzlysoft.cn",
+          from: "/dev-api",
+          to: "https://yinjiuyinyue-service.grizzlysoft.cn/api",
           status: 200,
           force: true,
         },
